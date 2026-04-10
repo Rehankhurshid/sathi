@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll Snap Test — SATHI</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-family: system-ui, -apple-system, sans-serif; }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .hero          { background: #0a0a0a; }
+    .about         { background: #1a1a2e; }
+
+    /* ── Snap Zone ── */
+    #snap-zone {
+      /* height is set dynamically by JS: FEATURE_COUNT * 100vh */
+      position: relative;
+    }
+
+    .feature-item {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      font-weight: 800;
+      transition: opacity 0.4s ease;
+    }
+    .feature-item span {
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: 0.5;
+      margin-top: 0.5rem;
+    }
+
+    .feature-item:nth-child(1) { background: linear-gradient(135deg, #667eea, #764ba2); }
+    .feature-item:nth-child(2) { background: linear-gradient(135deg, #f093fb, #f5576c); }
+    .feature-item:nth-child(3) { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+    .feature-item:nth-child(4) { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+
+    .after-features { background: #111; }
+    .footer         { background: #050505; height: 60vh; }
+
+    /* Debug panel */
+    #debug {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.85);
+      color: #0f0;
+      font-family: monospace;
+      font-size: 12px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      z-index: 999999;
+      line-height: 1.6;
+      pointer-events: none;
+      min-width: 220px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Normal scrollable content BEFORE snap zone -->
+  <div class="section hero">Hero Section</div>
+  <div class="section about">About Section — Scroll down ↓</div>
+
+  <!-- ── SNAP ZONE ── -->
+  <div id="snap-zone">
+    <div data-snap-item data-index="0" class="feature-item">
+      Feature 1 <span>First snap target when entering from top</span>
+    </div>
+    <div data-snap-item data-index="1" class="feature-item">
+      Feature 2 <span>Should only reach here with a deliberate second scroll</span>
+    </div>
+    <div data-snap-item data-index="2" class="feature-item">
+      Feature 3 <span>Third deliberate scroll</span>
+    </div>
+    <div data-snap-item data-index="3" class="feature-item">
+      Feature 4 <span>Last snap — next scroll exits snap zone</span>
+    </div>
+  </div>
+
+  <!-- Normal scrollable content AFTER snap zone -->
+  <div class="section after-features">Content After Features — Normal scroll resumes</div>
+  <div class="section footer">Footer</div>
+
+  <!-- Debug overlay -->
+  <div id="debug">Loading…</div>
+
+  <!-- ── Dependencies ── -->
+  <!-- Lenis smooth scroll -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <!-- GSAP (for buttery scrollTo) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+
+  <script>
+    // ══════════════════════════════════════════════════════════════════
+    //  1. LENIS SETUP
+    // ══════════════════════════════════════════════════════════════════
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // ══════════════════════════════════════════════════════════════════
+    //  2. SNAP ZONE SETUP
+    // ══════════════════════════════════════════════════════════════════
+    const snapZone  = document.getElementById("snap-zone");
+    const snapItems = Array.from(document.querySelectorAll("[data-snap-item]"));
+    const FEATURE_COUNT = snapItems.length;
+    const debugEl = document.getElementById("debug");
+
+    // Set the snap-zone to exactly FEATURE_COUNT * 100vh
+    snapZone.style.height = FEATURE_COUNT * 100 + "vh";
+
+    // ══════════════════════════════════════════════════════════════════
+    //  3. STATE
+    // ══════════════════════════════════════════════════════════════════
+    let isSnapping       = false;   // Are we trapped in snap mode?
+    let currentSnapIndex = 0;       // Which feature item are we on?
+    let isAnimating      = false;   // Is GSAP currently scrolling to an item?
+    let isExiting        = false;   // Exit animation in progress — block re-entry
+    let isCooling        = false;   // Post-animation: absorbing momentum
+    let lastDeltaY       = 0;       // Previous wheel event's absolute deltaY
+    let lastDirection    = 0;       // Previous wheel event's direction (+1 / -1)
+
+    // ══════════════════════════════════════════════════════════════════
+    //  4. HELPERS
+    // ══════════════════════════════════════════════════════════════════
+
+    /** Check if the viewport is fully inside the snap zone */
+    function isInSnapZone() {
+      const rect = snapZone.getBoundingClientRect();
+      return rect.top <= 1 && rect.bottom >= window.innerHeight - 1;
+    }
+
+    /**
+     * Detect whether a wheel event is trailing trackpad momentum
+     * or a fresh deliberate scroll.
+     *
+     * Momentum signature: rapid fire, same direction, DECAYING deltaY.
+     * New scroll signature: direction change OR deltaY SPIKES upward.
+     */
+    function isDeliberateScroll(e) {
+      const absDelta  = Math.abs(e.deltaY);
+      const direction = e.deltaY > 0 ? 1 : -1;
+
+      // Direction changed → definitely a new gesture
+      if (direction !== lastDirection) {
+        lastDeltaY    = absDelta;
+        lastDirection = direction;
+        return true;
+      }
+
+      // deltaY spiked upward (new finger touch) → new gesture
+      // Momentum decays, so currentDelta > lastDelta means fresh input
+      if (absDelta > lastDeltaY * 1.3) {
+        lastDeltaY    = absDelta;
+        lastDirection = direction;
+        return true;
+      }
+
+      // Decaying or flat → momentum, swallow it
+      lastDeltaY    = absDelta;
+      lastDirection = direction;
+      return false;
+    }
+
+    /** Animate scroll to a specific snap item using GSAP */
+    function scrollToItem(index) {
+      const item = snapItems[index];
+      if (!item) return;
+
+      isAnimating = true;
+      isCooling   = false;
+      const targetY = item.getBoundingClientRect().top + window.scrollY;
+
+      gsap.to(window, {
+        scrollTo: { y: targetY, autoKill: false },
+        duration: 0.6,
+        ease: "power2.inOut",
+        onComplete: () => {
+          isAnimating = false;
+          isCooling   = true;   // Start absorbing trailing momentum
+          lastDeltaY  = Infinity; // Any real event will be smaller → starts as "decaying"
+        },
+      });
+    }
+
+    /** Enter snap mode: stop Lenis so it doesn't fight our GSAP animations */
+    function enterSnapMode() {
+      if (isSnapping) return;
+      isSnapping = true;
+      lenis.stop();
+    }
+
+    /** Exit snap mode: scroll to the boundary edge and restart Lenis */
+    function exitSnapMode(scrollTargetY) {
+      if (!isSnapping) return;
+      isSnapping  = false;
+      isAnimating = true;
+      isExiting   = true;    // Block re-entry until we've left the zone
+      isCooling   = false;
+
+      if (typeof scrollTargetY === "number") {
+        gsap.to(window, {
+          scrollTo: { y: scrollTargetY, autoKill: false },
+          duration: 0.5,
+          ease: "power2.out",
+          onComplete: () => {
+            isAnimating = false;
+            isExiting   = false;
+            lenis.start();
+          },
+        });
+      } else {
+        isAnimating = false;
+        isExiting   = false;
+        lenis.start();
+      }
+    }
+
+    // ══════════════════════════════════════════════════════════════════
+    //  5. WHEEL EVENT
+    //
+    //  passive: false → allows preventDefault().
+    //
+    //  Momentum handling: after each snap animation, we enter a
+    //  "cooling" state. We track deltaY magnitude on each wheel event.
+    //  Momentum events have DECAYING deltaY. A fresh deliberate scroll
+    //  creates a deltaY SPIKE or a direction change. This lets us
+    //  distinguish the two without any fixed timers — so rapid
+    //  intentional scrolling still works instantly.
+    // ══════════════════════════════════════════════════════════════════
+    window.addEventListener(
+      "wheel",
+      (e) => {
+        const inSnap = isInSnapZone();
+
+        // ── A) NOT SNAPPING YET ──
+        if (!isSnapping) {
+          // Still inside zone during exit animation → swallow, don't re-enter
+          if (isExiting) {
+            e.preventDefault();
+            return;
+          }
+          if (!inSnap) return;
+
+          e.preventDefault();
+          enterSnapMode();
+          lastDirection = e.deltaY > 0 ? 1 : -1;
+          lastDeltaY    = Math.abs(e.deltaY);
+
+          currentSnapIndex = e.deltaY > 0 ? 0 : FEATURE_COUNT - 1;
+          scrollToItem(currentSnapIndex);
+          return;
+        }
+
+        // ── B) ALREADY IN SNAP MODE ──
+        e.preventDefault();
+
+        // Animation in progress → swallow everything
+        if (isAnimating) return;
+
+        // Cooling down: absorbing post-animation momentum
+        if (isCooling) {
+          if (!isDeliberateScroll(e)) return; // Momentum → swallow
+          isCooling = false;                  // Spike/direction change → accept!
+        }
+
+        // ── C) ACCEPT DELIBERATE SCROLL ──
+        const direction = e.deltaY > 0 ? 1 : -1;
+        const nextIndex = currentSnapIndex + direction;
+
+        if (nextIndex < 0) {
+          currentSnapIndex = 0;
+          const topY = snapZone.getBoundingClientRect().top + window.scrollY - 2;
+          exitSnapMode(topY);
+          return;
+        }
+
+        if (nextIndex >= FEATURE_COUNT) {
+          currentSnapIndex = FEATURE_COUNT - 1;
+          const bottomY =
+            snapZone.getBoundingClientRect().bottom +
+            window.scrollY -
+            window.innerHeight + 2;
+          exitSnapMode(bottomY);
+          return;
+        }
+
+        currentSnapIndex = nextIndex;
+        scrollToItem(currentSnapIndex);
+      },
+      { passive: false },
+    );
+
+    // ══════════════════════════════════════════════════════════════════
+    //  6. SAFETY: re-enable Lenis if user escapes snap zone by other
+    //     means (keyboard, browser back, programmatic scroll).
+    // ══════════════════════════════════════════════════════════════════
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (isAnimating) return;
+        if (isSnapping && !isInSnapZone()) {
+          exitSnapMode();
+        }
+      },
+      { passive: true },
+    );
+
+    // ══════════════════════════════════════════════════════════════════
+    //  7. DEBUG OVERLAY
+    // ══════════════════════════════════════════════════════════════════
+    setInterval(() => {
+      debugEl.innerHTML = [
+        `<b>isSnapping:</b> ${isSnapping}`,
+        `<b>currentSnapIndex:</b> ${currentSnapIndex}`,
+        `<b>isAnimating:</b> ${isAnimating}`,
+        `<b>isCooling:</b> ${isCooling}`,
+        `<b>lastDeltaY:</b> ${lastDeltaY === Infinity ? '∞' : lastDeltaY.toFixed(1)}`,
+        `<b>isInSnapZone():</b> ${isInSnapZone()}`,
+        `<b>scrollY:</b> ${Math.round(window.scrollY)}`,
+      ].join("<br>");
+    }, 60);
+  </script>
+</body>
+</html>

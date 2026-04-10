@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]: Hero Section
+  - generic [ref=e3]: About Section — Scroll down ↓
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - text: Feature 1
+      - generic [ref=e6]: First snap target when entering from top
+    - generic [ref=e7]:
+      - text: Feature 2
+      - generic [ref=e8]: Should only reach here with a deliberate second scroll
+    - generic [ref=e9]:
+      - text: Feature 3
+      - generic [ref=e10]: Third deliberate scroll
+    - generic [ref=e11]:
+      - text: Feature 4
+      - generic [ref=e12]: Last snap — next scroll exits snap zone
+  - generic [ref=e13]: Content After Features — Normal scroll resumes
+  - generic [ref=e14]: Footer
+  - generic: Loading…
