@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // DRASTIC TEST: Add a huge red border to the body
+  document.body.style.boxSizing = "border-box";
+  document.body.style.border = "20px solid red";
+  document.body.style.minHeight = "100vh";
+  
   initHighlightText();
   initMiniShowreelCursorFollow();
   initBunnyPlayer();

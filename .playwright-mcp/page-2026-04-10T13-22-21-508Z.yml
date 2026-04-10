@@ -1,0 +1,1714 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "home" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+        - navigation [ref=e15]:
+          - link "Demo" [ref=e16] [cursor=pointer]:
+            - /url: /demo
+          - link "Pricing" [ref=e17] [cursor=pointer]:
+            - /url: /pricing
+          - link "Compare" [ref=e18] [cursor=pointer]:
+            - /url: /compare
+          - link "Origin" [ref=e19] [cursor=pointer]:
+            - /url: /origin
+        - generic [ref=e21]:
+          - link [ref=e22] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e23]
+          - link "Book a demo" [ref=e26] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e27]: Book a demo
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e36]:
+          - heading "See the True Impact of your Affiliate Program" [level=1] [ref=e37]:
+            - generic [ref=e39]: See
+            - generic [ref=e41]: the
+            - generic [ref=e43]: "True"
+            - generic [ref=e45]: Impact
+            - generic [ref=e47]: of
+            - generic [ref=e49]: your
+            - generic [ref=e51]: Affiliate
+            - generic [ref=e53]: Program
+          - generic "The new standard for Shopify brands turning affiliate into a primary revenue driver. SATHI turns creator programs into measurable, defensible performance engines." [ref=e55]:
+            - generic [ref=e57]: The
+            - generic [ref=e59]: new
+            - generic [ref=e61]: standard
+            - generic [ref=e63]: for
+            - generic [ref=e65]: Shopify
+            - generic [ref=e67]: brands
+            - generic [ref=e69]: turning
+            - generic [ref=e71]: affiliate
+            - generic [ref=e73]: into
+            - generic [ref=e75]: a
+            - generic [ref=e77]: primary
+            - generic [ref=e79]: revenue
+            - generic [ref=e81]: driver.
+            - generic [ref=e83]: SATHI
+            - generic [ref=e85]: turns
+            - generic [ref=e87]: creator
+            - generic [ref=e89]: programs
+            - generic [ref=e91]: into
+            - generic [ref=e93]: measurable,
+            - generic [ref=e95]: defensible
+            - generic [ref=e97]: performance
+            - generic [ref=e99]: engines.
+          - generic [ref=e100]:
+            - link "Request a trial" [ref=e101] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e102]: Request a trial
+            - link "Book a demo" [ref=e103] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e104]: Book a demo
+        - generic [ref=e106]:
+          - generic "Brands running profitable affiliate programs with SATHI" [ref=e107]:
+            - generic [ref=e109]: Brands
+            - generic [ref=e111]: running
+            - generic [ref=e113]: profitable
+            - generic [ref=e115]: affiliate
+            - generic [ref=e117]: programs
+            - generic [ref=e119]: with
+            - generic [ref=e121]: SATHI
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - img [ref=e124]
+              - img [ref=e160]
+              - img [ref=e177]
+              - img [ref=e194]
+            - generic [ref=e229]:
+              - img [ref=e231]
+              - img [ref=e248]
+              - img [ref=e265]
+      - generic [ref=e301]:
+        - heading "Every great warrior had a charioteer. Not someone who fought the battle, but someone who showed them where to aim.SATHI means companion in Sanskrit. We built your charioteer.Affiliate marketing has a truth problem. The data is noisy. The attribution is broken. Codes leak. Creators leave. And you are stuck on a treadmill that goes nowhere.We believe affiliate should be a channel you can prove, protect, and scale. Your program isn't broken. Your visibility is.We give you battlefield clarity, so you can win the war." [level=2] [ref=e305]:
+          - generic [ref=e306]:
+            - generic [ref=e307]: E
+            - generic [ref=e308]: v
+            - generic [ref=e309]: e
+            - generic [ref=e310]: r
+            - generic [ref=e311]: "y"
+          - generic [ref=e312]:
+            - generic [ref=e313]: g
+            - generic [ref=e314]: r
+            - generic [ref=e315]: e
+            - generic [ref=e316]: a
+            - generic [ref=e317]: t
+          - generic [ref=e318]:
+            - generic [ref=e319]: w
+            - generic [ref=e320]: a
+            - generic [ref=e321]: r
+            - generic [ref=e322]: r
+            - generic [ref=e323]: i
+            - generic [ref=e324]: o
+            - generic [ref=e325]: r
+          - generic [ref=e326]:
+            - generic [ref=e327]: h
+            - generic [ref=e328]: a
+            - generic [ref=e329]: d
+          - generic [ref=e331]: a
+          - generic [ref=e332]:
+            - generic [ref=e333]: c
+            - generic [ref=e334]: h
+            - generic [ref=e335]: a
+            - generic [ref=e336]: r
+            - generic [ref=e337]: i
+            - generic [ref=e338]: o
+            - generic [ref=e339]: t
+            - generic [ref=e340]: e
+            - generic [ref=e341]: e
+            - generic [ref=e342]: r
+            - generic [ref=e343]: .
+          - generic [ref=e344]:
+            - generic [ref=e345]: "N"
+            - generic [ref=e346]: o
+            - generic [ref=e347]: t
+          - generic [ref=e348]:
+            - generic [ref=e349]: s
+            - generic [ref=e350]: o
+            - generic [ref=e351]: m
+            - generic [ref=e352]: e
+            - generic [ref=e353]: o
+            - generic [ref=e354]: "n"
+            - generic [ref=e355]: e
+          - generic [ref=e356]:
+            - generic [ref=e357]: w
+            - generic [ref=e358]: h
+            - generic [ref=e359]: o
+          - generic [ref=e360]:
+            - generic [ref=e361]: f
+            - generic [ref=e362]: o
+            - generic [ref=e363]: u
+            - generic [ref=e364]: g
+            - generic [ref=e365]: h
+            - generic [ref=e366]: t
+          - generic [ref=e367]:
+            - generic [ref=e368]: t
+            - generic [ref=e369]: h
+            - generic [ref=e370]: e
+          - generic [ref=e371]:
+            - generic [ref=e372]: b
+            - generic [ref=e373]: a
+            - generic [ref=e374]: t
+            - generic [ref=e375]: t
+            - generic [ref=e376]: l
+            - generic [ref=e377]: e
+            - generic [ref=e378]: ","
+          - generic [ref=e379]:
+            - generic [ref=e380]: b
+            - generic [ref=e381]: u
+            - generic [ref=e382]: t
+          - generic [ref=e383]:
+            - generic [ref=e384]: s
+            - generic [ref=e385]: o
+            - generic [ref=e386]: m
+            - generic [ref=e387]: e
+            - generic [ref=e388]: o
+            - generic [ref=e389]: "n"
+            - generic [ref=e390]: e
+          - generic [ref=e391]:
+            - generic [ref=e392]: w
+            - generic [ref=e393]: h
+            - generic [ref=e394]: o
+          - generic [ref=e395]:
+            - generic [ref=e396]: s
+            - generic [ref=e397]: h
+            - generic [ref=e398]: o
+            - generic [ref=e399]: w
+            - generic [ref=e400]: e
+            - generic [ref=e401]: d
+          - generic [ref=e402]:
+            - generic [ref=e403]: t
+            - generic [ref=e404]: h
+            - generic [ref=e405]: e
+            - generic [ref=e406]: m
+          - generic [ref=e407]:
+            - generic [ref=e408]: w
+            - generic [ref=e409]: h
+            - generic [ref=e410]: e
+            - generic [ref=e411]: r
+            - generic [ref=e412]: e
+          - generic [ref=e413]:
+            - generic [ref=e414]: t
+            - generic [ref=e415]: o
+          - generic [ref=e416]:
+            - generic [ref=e417]: a
+            - generic [ref=e418]: i
+            - generic [ref=e419]: m
+            - generic [ref=e420]: .
+          - generic [ref=e421]:
+            - generic [ref=e422]: S
+            - generic [ref=e423]: A
+            - generic [ref=e424]: T
+            - generic [ref=e425]: H
+            - generic [ref=e426]: I
+          - generic [ref=e427]:
+            - generic [ref=e428]: m
+            - generic [ref=e429]: e
+            - generic [ref=e430]: a
+            - generic [ref=e431]: "n"
+            - generic [ref=e432]: s
+          - generic [ref=e433]:
+            - generic [ref=e434]: c
+            - generic [ref=e435]: o
+            - generic [ref=e436]: m
+            - generic [ref=e437]: p
+            - generic [ref=e438]: a
+            - generic [ref=e439]: "n"
+            - generic [ref=e440]: i
+            - generic [ref=e441]: o
+            - generic [ref=e442]: "n"
+          - generic [ref=e443]:
+            - generic [ref=e444]: i
+            - generic [ref=e445]: "n"
+          - generic [ref=e446]:
+            - generic [ref=e447]: S
+            - generic [ref=e448]: a
+            - generic [ref=e449]: "n"
+            - generic [ref=e450]: s
+            - generic [ref=e451]: k
+            - generic [ref=e452]: r
+            - generic [ref=e453]: i
+            - generic [ref=e454]: t
+            - generic [ref=e455]: .
+          - generic [ref=e456]:
+            - generic [ref=e457]: W
+            - generic [ref=e458]: e
+          - generic [ref=e459]:
+            - generic [ref=e460]: b
+            - generic [ref=e461]: u
+            - generic [ref=e462]: i
+            - generic [ref=e463]: l
+            - generic [ref=e464]: t
+          - generic [ref=e465]:
+            - generic [ref=e466]: "y"
+            - generic [ref=e467]: o
+            - generic [ref=e468]: u
+            - generic [ref=e469]: r
+          - generic [ref=e470]:
+            - generic [ref=e471]: c
+            - generic [ref=e472]: h
+            - generic [ref=e473]: a
+            - generic [ref=e474]: r
+            - generic [ref=e475]: i
+            - generic [ref=e476]: o
+            - generic [ref=e477]: t
+            - generic [ref=e478]: e
+            - generic [ref=e479]: e
+            - generic [ref=e480]: r
+            - generic [ref=e481]: .
+          - generic [ref=e482]:
+            - generic [ref=e483]: A
+            - generic [ref=e484]: f
+            - generic [ref=e485]: f
+            - generic [ref=e486]: i
+            - generic [ref=e487]: l
+            - generic [ref=e488]: i
+            - generic [ref=e489]: a
+            - generic [ref=e490]: t
+            - generic [ref=e491]: e
+          - generic [ref=e492]:
+            - generic [ref=e493]: m
+            - generic [ref=e494]: a
+            - generic [ref=e495]: r
+            - generic [ref=e496]: k
+            - generic [ref=e497]: e
+            - generic [ref=e498]: t
+            - generic [ref=e499]: i
+            - generic [ref=e500]: "n"
+            - generic [ref=e501]: g
+          - generic [ref=e502]:
+            - generic [ref=e503]: h
+            - generic [ref=e504]: a
+            - generic [ref=e505]: s
+          - generic [ref=e507]: a
+          - generic [ref=e508]:
+            - generic [ref=e509]: t
+            - generic [ref=e510]: r
+            - generic [ref=e511]: u
+            - generic [ref=e512]: t
+            - generic [ref=e513]: h
+          - generic [ref=e514]:
+            - generic [ref=e515]: p
+            - generic [ref=e516]: r
+            - generic [ref=e517]: o
+            - generic [ref=e518]: b
+            - generic [ref=e519]: l
+            - generic [ref=e520]: e
+            - generic [ref=e521]: m
+            - generic [ref=e522]: .
+          - generic [ref=e523]:
+            - generic [ref=e524]: T
+            - generic [ref=e525]: h
+            - generic [ref=e526]: e
+          - generic [ref=e527]:
+            - generic [ref=e528]: d
+            - generic [ref=e529]: a
+            - generic [ref=e530]: t
+            - generic [ref=e531]: a
+          - generic [ref=e532]:
+            - generic [ref=e533]: i
+            - generic [ref=e534]: s
+          - generic [ref=e535]:
+            - generic [ref=e536]: "n"
+            - generic [ref=e537]: o
+            - generic [ref=e538]: i
+            - generic [ref=e539]: s
+            - generic [ref=e540]: "y"
+            - generic [ref=e541]: .
+          - generic [ref=e542]:
+            - generic [ref=e543]: T
+            - generic [ref=e544]: h
+            - generic [ref=e545]: e
+          - generic [ref=e546]:
+            - generic [ref=e547]: a
+            - generic [ref=e548]: t
+            - generic [ref=e549]: t
+            - generic [ref=e550]: r
+            - generic [ref=e551]: i
+            - generic [ref=e552]: b
+            - generic [ref=e553]: u
+            - generic [ref=e554]: t
+            - generic [ref=e555]: i
+            - generic [ref=e556]: o
+            - generic [ref=e557]: "n"
+          - generic [ref=e558]:
+            - generic [ref=e559]: i
+            - generic [ref=e560]: s
+          - generic [ref=e561]:
+            - generic [ref=e562]: b
+            - generic [ref=e563]: r
+            - generic [ref=e564]: o
+            - generic [ref=e565]: k
+            - generic [ref=e566]: e
+            - generic [ref=e567]: "n"
+            - generic [ref=e568]: .
+          - generic [ref=e569]:
+            - generic [ref=e570]: C
+            - generic [ref=e571]: o
+            - generic [ref=e572]: d
+            - generic [ref=e573]: e
+            - generic [ref=e574]: s
+          - generic [ref=e575]:
+            - generic [ref=e576]: l
+            - generic [ref=e577]: e
+            - generic [ref=e578]: a
+            - generic [ref=e579]: k
+            - generic [ref=e580]: .
+          - generic [ref=e581]:
+            - generic [ref=e582]: C
+            - generic [ref=e583]: r
+            - generic [ref=e584]: e
+            - generic [ref=e585]: a
+            - generic [ref=e586]: t
+            - generic [ref=e587]: o
+            - generic [ref=e588]: r
+            - generic [ref=e589]: s
+          - generic [ref=e590]:
+            - generic [ref=e591]: l
+            - generic [ref=e592]: e
+            - generic [ref=e593]: a
+            - generic [ref=e594]: v
+            - generic [ref=e595]: e
+            - generic [ref=e596]: .
+          - generic [ref=e597]:
+            - generic [ref=e598]: A
+            - generic [ref=e599]: "n"
+            - generic [ref=e600]: d
+          - generic [ref=e601]:
+            - generic [ref=e602]: "y"
+            - generic [ref=e603]: o
+            - generic [ref=e604]: u
+          - generic [ref=e605]:
+            - generic [ref=e606]: a
+            - generic [ref=e607]: r
+            - generic [ref=e608]: e
+          - generic [ref=e609]:
+            - generic [ref=e610]: s
+            - generic [ref=e611]: t
+            - generic [ref=e612]: u
+            - generic [ref=e613]: c
+            - generic [ref=e614]: k
+          - generic [ref=e615]:
+            - generic [ref=e616]: o
+            - generic [ref=e617]: "n"
+          - generic [ref=e619]: a
+          - generic [ref=e620]:
+            - generic [ref=e621]: t
+            - generic [ref=e622]: r
+            - generic [ref=e623]: e
+            - generic [ref=e624]: a
+            - generic [ref=e625]: d
+            - generic [ref=e626]: m
+            - generic [ref=e627]: i
+            - generic [ref=e628]: l
+            - generic [ref=e629]: l
+          - generic [ref=e630]:
+            - generic [ref=e631]: t
+            - generic [ref=e632]: h
+            - generic [ref=e633]: a
+            - generic [ref=e634]: t
+          - generic [ref=e635]:
+            - generic [ref=e636]: g
+            - generic [ref=e637]: o
+            - generic [ref=e638]: e
+            - generic [ref=e639]: s
+          - generic [ref=e640]:
+            - generic [ref=e641]: "n"
+            - generic [ref=e642]: o
+            - generic [ref=e643]: w
+            - generic [ref=e644]: h
+            - generic [ref=e645]: e
+            - generic [ref=e646]: r
+            - generic [ref=e647]: e
+            - generic [ref=e648]: .
+          - generic [ref=e649]:
+            - generic [ref=e650]: W
+            - generic [ref=e651]: e
+          - generic [ref=e652]:
+            - generic [ref=e653]: b
+            - generic [ref=e654]: e
+            - generic [ref=e655]: l
+            - generic [ref=e656]: i
+            - generic [ref=e657]: e
+            - generic [ref=e658]: v
+            - generic [ref=e659]: e
+          - generic [ref=e660]:
+            - generic [ref=e661]: a
+            - generic [ref=e662]: f
+            - generic [ref=e663]: f
+            - generic [ref=e664]: i
+            - generic [ref=e665]: l
+            - generic [ref=e666]: i
+            - generic [ref=e667]: a
+            - generic [ref=e668]: t
+            - generic [ref=e669]: e
+          - generic [ref=e670]:
+            - generic [ref=e671]: s
+            - generic [ref=e672]: h
+            - generic [ref=e673]: o
+            - generic [ref=e674]: u
+            - generic [ref=e675]: l
+            - generic [ref=e676]: d
+          - generic [ref=e677]:
+            - generic [ref=e678]: b
+            - generic [ref=e679]: e
+          - generic [ref=e681]: a
+          - generic [ref=e682]:
+            - generic [ref=e683]: c
+            - generic [ref=e684]: h
+            - generic [ref=e685]: a
+            - generic [ref=e686]: "n"
+            - generic [ref=e687]: "n"
+            - generic [ref=e688]: e
+            - generic [ref=e689]: l
+          - generic [ref=e690]:
+            - generic [ref=e691]: "y"
+            - generic [ref=e692]: o
+            - generic [ref=e693]: u
+          - generic [ref=e694]:
+            - generic [ref=e695]: c
+            - generic [ref=e696]: a
+            - generic [ref=e697]: "n"
+          - generic [ref=e698]:
+            - generic [ref=e699]: p
+            - generic [ref=e700]: r
+            - generic [ref=e701]: o
+            - generic [ref=e702]: v
+            - generic [ref=e703]: e
+            - generic [ref=e704]: ","
+          - generic [ref=e705]:
+            - generic [ref=e706]: p
+            - generic [ref=e707]: r
+            - generic [ref=e708]: o
+            - generic [ref=e709]: t
+            - generic [ref=e710]: e
+            - generic [ref=e711]: c
+            - generic [ref=e712]: t
+            - generic [ref=e713]: ","
+          - generic [ref=e714]:
+            - generic [ref=e715]: a
+            - generic [ref=e716]: "n"
+            - generic [ref=e717]: d
+          - generic [ref=e718]:
+            - generic [ref=e719]: s
+            - generic [ref=e720]: c
+            - generic [ref=e721]: a
+            - generic [ref=e722]: l
+            - generic [ref=e723]: e
+            - generic [ref=e724]: .
+          - generic [ref=e725]:
+            - generic [ref=e726]: "Y"
+            - generic [ref=e727]: o
+            - generic [ref=e728]: u
+            - generic [ref=e729]: r
+          - generic [ref=e730]:
+            - generic [ref=e731]: p
+            - generic [ref=e732]: r
+            - generic [ref=e733]: o
+            - generic [ref=e734]: g
+            - generic [ref=e735]: r
+            - generic [ref=e736]: a
+            - generic [ref=e737]: m
+          - generic [ref=e738]:
+            - generic [ref=e739]: i
+            - generic [ref=e740]: s
+            - generic [ref=e741]: "n"
+            - generic [ref=e742]: "'"
+            - generic [ref=e743]: t
+          - generic [ref=e744]:
+            - generic [ref=e745]: b
+            - generic [ref=e746]: r
+            - generic [ref=e747]: o
+            - generic [ref=e748]: k
+            - generic [ref=e749]: e
+            - generic [ref=e750]: "n"
+            - generic [ref=e751]: .
+          - generic [ref=e752]:
+            - generic [ref=e753]: "Y"
+            - generic [ref=e754]: o
+            - generic [ref=e755]: u
+            - generic [ref=e756]: r
+          - generic [ref=e757]:
+            - generic [ref=e758]: v
+            - generic [ref=e759]: i
+            - generic [ref=e760]: s
+            - generic [ref=e761]: i
+            - generic [ref=e762]: b
+            - generic [ref=e763]: i
+            - generic [ref=e764]: l
+            - generic [ref=e765]: i
+            - generic [ref=e766]: t
+            - generic [ref=e767]: "y"
+          - generic [ref=e768]:
+            - generic [ref=e769]: i
+            - generic [ref=e770]: s
+            - generic [ref=e771]: .
+          - generic [ref=e772]:
+            - generic [ref=e773]: W
+            - generic [ref=e774]: e
+          - generic [ref=e775]:
+            - generic [ref=e776]: g
+            - generic [ref=e777]: i
+            - generic [ref=e778]: v
+            - generic [ref=e779]: e
+          - generic [ref=e780]:
+            - generic [ref=e781]: "y"
+            - generic [ref=e782]: o
+            - generic [ref=e783]: u
+          - generic [ref=e784]:
+            - generic [ref=e785]: b
+            - generic [ref=e786]: a
+            - generic [ref=e787]: t
+            - generic [ref=e788]: t
+            - generic [ref=e789]: l
+            - generic [ref=e790]: e
+            - generic [ref=e791]: f
+            - generic [ref=e792]: i
+            - generic [ref=e793]: e
+            - generic [ref=e794]: l
+            - generic [ref=e795]: d
+          - generic [ref=e796]:
+            - generic [ref=e797]: c
+            - generic [ref=e798]: l
+            - generic [ref=e799]: a
+            - generic [ref=e800]: r
+            - generic [ref=e801]: i
+            - generic [ref=e802]: t
+            - generic [ref=e803]: "y"
+            - generic [ref=e804]: ","
+          - generic [ref=e805]:
+            - generic [ref=e806]: s
+            - generic [ref=e807]: o
+          - generic [ref=e808]:
+            - generic [ref=e809]: "y"
+            - generic [ref=e810]: o
+            - generic [ref=e811]: u
+          - generic [ref=e812]:
+            - generic [ref=e813]: c
+            - generic [ref=e814]: a
+            - generic [ref=e815]: "n"
+          - generic [ref=e816]:
+            - generic [ref=e817]: w
+            - generic [ref=e818]: i
+            - generic [ref=e819]: "n"
+          - generic [ref=e820]:
+            - generic [ref=e821]: t
+            - generic [ref=e822]: h
+            - generic [ref=e823]: e
+          - generic [ref=e824]:
+            - generic [ref=e825]: w
+            - generic [ref=e826]: a
+            - generic [ref=e827]: r
+            - generic [ref=e828]: .
+        - generic [ref=e832]:
+          - generic:
+            - img [ref=e835] [cursor=pointer]
+            - generic [ref=e837]:
+              - img [ref=e839] [cursor=pointer]
+              - generic [ref=e841]:
+                - paragraph [ref=e842]: 00:00
+                - paragraph [ref=e843]: /
+                - paragraph [ref=e844]: 00:35
+              - generic [ref=e845]:
+                - img [ref=e847] [cursor=pointer]
+                - img [ref=e850] [cursor=pointer]
+      - generic [ref=e860]:
+        - generic [ref=e865]:
+          - generic [ref=e867]:
+            - generic "01 / Feature" [ref=e868]:
+              - generic [ref=e870]: "01"
+              - generic [ref=e872]: /
+              - generic [ref=e874]: Feature
+            - heading "Transcendental Clarity" [level=2] [ref=e875]:
+              - generic [ref=e877]: Transcendental
+              - generic [ref=e879]: Clarity
+          - generic [ref=e883]:
+            - link "Cookieless Tracking that tells the full story Capture sales even when cookies fail and privacy settings block everything else." [ref=e884] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e887]
+              - generic [ref=e890]:
+                - generic [ref=e891]: Cookieless Tracking that tells the full story
+                - generic: Capture sales even when cookies fail and privacy settings block everything else.
+            - link "Influence you can't normally see Post-purchase surveys rack creator-driven sales that happen without a link or code" [ref=e892] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e895]
+              - generic [ref=e898]:
+                - generic [ref=e899]: Influence you can't normally see
+                - generic: Post-purchase surveys rack creator-driven sales that happen without a link or code
+            - link "Incentivize growth that matters Tier your commissions, reward more for bringing new customers than converting people already buying." [ref=e900] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e903]
+              - generic [ref=e906]:
+                - generic [ref=e907]: Incentivize growth that matters
+                - generic: Tier your commissions, reward more for bringing new customers than converting people already buying.
+        - generic [ref=e917]:
+          - generic [ref=e919]:
+            - generic [ref=e920]: 02 / Feature
+            - heading "Ironclad Protection" [level=2] [ref=e921]:
+              - generic [ref=e923]: Ironclad
+              - generic [ref=e925]: Protection
+          - generic [ref=e929]:
+            - link "Codes that don't escape LeakProof discounts expire after one use; no Reddit leaks or coupon site theft." [ref=e930] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e933]
+              - generic [ref=e936]:
+                - generic [ref=e937]: Codes that don't escape
+                - generic: LeakProof discounts expire after one use; no Reddit leaks or coupon site theft.
+            - link "Anti-fraud engine working overtime Spot self-referrals, suspicious refunds, and fake traffic to protect your margins." [ref=e938] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e941]
+              - generic [ref=e944]:
+                - generic [ref=e945]: Anti-fraud engine working overtime
+                - generic: Spot self-referrals, suspicious refunds, and fake traffic to protect your margins.
+            - link "Patterns caught early Review suspicious orders in real-time, before commissions go out." [ref=e946] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e949]
+              - generic [ref=e952]:
+                - generic [ref=e953]: Patterns caught early
+                - generic: Review suspicious orders in real-time, before commissions go out.
+        - generic [ref=e963]:
+          - generic [ref=e965]:
+            - generic [ref=e966]: 03 / Feature
+            - heading "Enduring Loyalty" [level=2] [ref=e967]:
+              - generic [ref=e969]: Enduring
+              - generic [ref=e971]: Loyalty
+          - generic [ref=e975]:
+            - link "Landing pages worth sharing Custom landing pages creators feel proud to share with their audience." [ref=e976] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e979]
+              - generic [ref=e982]:
+                - generic [ref=e983]: Landing pages worth sharing
+                - generic: Custom landing pages creators feel proud to share with their audience.
+            - link "Momentum that compounds // Trust built on transparency Show progress, celebrate milestones, display real-time earnings - keep ‘em coming back // ambassadors stick around and post more" [ref=e984] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e987]
+              - generic [ref=e990]:
+                - generic [ref=e991]: Momentum that compounds // Trust built on transparency
+                - generic: Show progress, celebrate milestones, display real-time earnings - keep ‘em coming back // ambassadors stick around and post more
+            - link "Credit where it’s due When multiple affiliates contribute to a sale, everyone gets recognised." [ref=e992] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e995]
+              - generic [ref=e998]:
+                - generic [ref=e999]: Credit where it’s due
+                - generic: When multiple affiliates contribute to a sale, everyone gets recognised.
+        - generic [ref=e1008]:
+          - generic [ref=e1010]:
+            - generic [ref=e1011]: 04 / Feature
+            - heading "Effortless Operations" [level=2] [ref=e1012]:
+              - generic [ref=e1014]: Effortless
+              - generic [ref=e1016]: Operations
+          - generic [ref=e1020]:
+            - link "Live in hours Set up your entire program in hours with guided onboarding and one-click migration." [ref=e1021] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e1024]
+              - generic [ref=e1027]:
+                - generic [ref=e1028]: Live in hours
+                - generic: Set up your entire program in hours with guided onboarding and one-click migration.
+            - link "Payouts & Taxes on autopilot Scheduled payments, automatic invoice and 1099 generation. Finance never pings you" [ref=e1029] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e1032]
+              - generic [ref=e1035]:
+                - generic [ref=e1036]: Payouts & Taxes on autopilot
+                - generic: Scheduled payments, automatic invoice and 1099 generation. Finance never pings you
+            - link "Support from operators Talk to people who understand affiliate marketing when you need help." [ref=e1037] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e1040]
+              - generic [ref=e1043]:
+                - generic [ref=e1044]: Support from operators
+                - generic: Talk to people who understand affiliate marketing when you need help.
+      - generic [ref=e1053]:
+        - generic [ref=e1055]: 03 / Testimonials
+        - generic [ref=e1056]:
+          - generic [ref=e1057]:
+            - generic "“We could quickly explore products through demos and get a real feel for the experience before committing. experience before committing. experience before committing. experience before committing.”" [ref=e1058]:
+              - generic [ref=e1059]: “We could quickly explore products through demos and get a real feel for the
+              - generic [ref=e1060]: experience before committing. experience before committing. experience
+              - generic [ref=e1061]: before committing. experience before committing.”
+            - generic "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters" [ref=e1062]:
+              - generic [ref=e1063]: It is a long established fact that a reader will be distracted by the readable
+              - generic [ref=e1064]: content of a page when looking at its layout. The point of using Lorem Ipsum is
+              - generic [ref=e1065]: that it has a more-or-less normal distribution of letters
+            - generic "“We could quickly explore products through demos and get a real feel for the experience before committing. experience before committing.experience before committing.experience before committing.”" [ref=e1066]:
+              - generic [ref=e1067]: “We could quickly explore products through demos and get a real feel for the
+              - generic [ref=e1068]: experience before committing. experience before committing.experience
+              - generic [ref=e1069]: before committing.experience before committing.”
+            - generic "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters" [ref=e1070]:
+              - generic [ref=e1071]: It is a long established fact that a reader will be distracted by the readable
+              - generic [ref=e1072]: content of a page when looking at its layout. The point of using Lorem Ipsum is
+              - generic [ref=e1073]: that it has a more-or-less normal distribution of letters
+            - generic "“We could quickly explore products through demos and get a real feel for the experience before committing. experience before committing.experience beforcommitting.experience before committing.”" [ref=e1074]:
+              - generic [ref=e1075]: “We could quickly explore products through demos and get a real feel for the
+              - generic [ref=e1076]: experience before committing. experience before committing.experience
+              - generic [ref=e1077]: beforcommitting.experience before committing.”
+          - generic [ref=e1078]:
+            - link "Park Jiwon CTO, fromis_9" [ref=e1079] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1082]:
+                - generic [ref=e1083]: Park Jiwon
+                - generic [ref=e1084]: CTO, fromis_9
+            - link "Kristan Collins CTO, Hubspot" [ref=e1085] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1089]:
+                - generic [ref=e1090]: Kristan Collins
+                - generic [ref=e1091]: CTO, Hubspot
+            - link "Park Jiwon CTO, fromis_9" [ref=e1092] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1095]:
+                - generic [ref=e1096]: Park Jiwon
+                - generic [ref=e1097]: CTO, fromis_9
+            - link "Park Jiwon CTO, fromis_9" [ref=e1098] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1101]:
+                - generic [ref=e1102]: Park Jiwon
+                - generic [ref=e1103]: CTO, fromis_9
+            - link "Park Jiwon CTO, fromis_9" [ref=e1104] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1107]:
+                - generic [ref=e1108]: Park Jiwon
+                - generic [ref=e1109]: CTO, fromis_9
+      - generic [ref=e1113]:
+        - generic [ref=e1114]:
+          - generic "04 / Pricing" [ref=e1115]:
+            - generic [ref=e1117]: "04"
+            - generic [ref=e1119]: /
+            - generic [ref=e1121]: Pricing
+          - heading "Choose what fits your program" [level=2] [ref=e1122]:
+            - generic [ref=e1124]: Choose
+            - generic [ref=e1126]: what
+            - generic [ref=e1128]: fits
+            - generic [ref=e1130]: your
+            - generic [ref=e1132]: program
+        - generic [ref=e1133]:
+          - generic [ref=e1134]:
+            - link "Monthly" [ref=e1135] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1136]: Monthly
+            - link "Quarterly 20% Off" [ref=e1137] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1138]: Quarterly
+              - generic [ref=e1140]: 20% Off
+          - generic [ref=e1142]:
+            - generic [ref=e1143]:
+              - generic [ref=e1148]:
+                - generic [ref=e1149]:
+                  - generic [ref=e1150]: Ember
+                  - generic [ref=e1151]: For teams are ready to launch
+                - generic [ref=e1152]:
+                  - paragraph [ref=e1153]:
+                    - generic [ref=e1154]: $
+                    - generic [ref=e1156]:
+                      - generic [ref=e1161]: "1"
+                      - generic [ref=e1166]: "9"
+                      - generic [ref=e1171]: "9"
+                    - generic [ref=e1172]:
+                      - text: $
+                      - generic [ref=e1174]:
+                        - generic [ref=e1179]: "2"
+                        - generic [ref=e1184]: "9"
+                        - generic [ref=e1189]: "9"
+                    - generic [ref=e1190]: per month
+                  - generic [ref=e1191]: + 2% affiliate revenue
+                - link "Start a free trial" [ref=e1192] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e1193]: Start a free trial
+              - list [ref=e1196]:
+                - listitem [ref=e1197]:
+                  - img [ref=e1199]
+                  - generic [ref=e1201]: Unlimited affiliates and links
+                - listitem [ref=e1202]:
+                  - img [ref=e1204]
+                  - generic [ref=e1206]: Up to 5 active campaigns
+                - listitem [ref=e1207]:
+                  - img [ref=e1209]
+                  - generic [ref=e1211]: Leak-proof codes & basic fraud protection
+                - listitem [ref=e1212]:
+                  - img [ref=e1214]
+                  - generic [ref=e1216]: Post-purchase surveys for attribution
+                - listitem [ref=e1217]:
+                  - img [ref=e1219]
+                  - generic [ref=e1221]: Tiered commissions
+                - listitem [ref=e1222]:
+                  - img [ref=e1224]
+                  - generic [ref=e1226]: Automated payouts
+                - listitem [ref=e1227]:
+                  - img [ref=e1229]
+                  - generic [ref=e1231]: 1 seat
+                - listitem [ref=e1232]:
+                  - img [ref=e1234]
+                  - generic [ref=e1236]: Fast in-app support
+            - generic [ref=e1237]:
+              - generic [ref=e1241]:
+                - generic [ref=e1245]: Launch Special Pricing
+                - generic [ref=e1246]:
+                  - generic [ref=e1247]:
+                    - generic [ref=e1248]: Blaze
+                    - generic [ref=e1249]: For teams that want to scale up
+                  - generic [ref=e1250]:
+                    - paragraph [ref=e1251]:
+                      - generic [ref=e1252]: $
+                      - generic [ref=e1254]:
+                        - generic [ref=e1259]: "3"
+                        - generic [ref=e1264]: "9"
+                        - generic [ref=e1269]: "9"
+                      - generic [ref=e1270]:
+                        - text: $
+                        - generic [ref=e1272]:
+                          - generic [ref=e1277]: "4"
+                          - generic [ref=e1282]: "9"
+                          - generic [ref=e1287]: "9"
+                      - generic [ref=e1288]: per month
+                    - generic [ref=e1289]: + 1% affiliate revenue
+                  - link "Start a free trial" [ref=e1290] [cursor=pointer]:
+                    - /url: "#"
+                    - generic [ref=e1291]: Start a free trial
+              - list [ref=e1294]:
+                - listitem [ref=e1295]:
+                  - img [ref=e1297]
+                  - generic [ref=e1299]: Everything in Ember +
+                - listitem [ref=e1300]:
+                  - img [ref=e1302]
+                  - generic [ref=e1304]: Up to 10 active campaigns
+                - listitem [ref=e1305]:
+                  - img [ref=e1307]
+                  - generic [ref=e1309]: Advanced fraud detection
+                - listitem [ref=e1310]:
+                  - img [ref=e1312]
+                  - generic [ref=e1314]: Custom campaign landing pages
+                - listitem [ref=e1315]:
+                  - img [ref=e1317]
+                  - generic [ref=e1319]: Turn customers into ambassadors automatically
+                - listitem [ref=e1320]:
+                  - img [ref=e1322]
+                  - generic [ref=e1324]: Tax compliance
+                - listitem [ref=e1325]:
+                  - img [ref=e1327]
+                  - generic [ref=e1329]: 5 seats
+                - listitem [ref=e1330]:
+                  - img [ref=e1332]
+                  - generic [ref=e1334]: Slack support + 2 onboarding calls
+            - generic [ref=e1335]:
+              - generic [ref=e1340]:
+                - generic [ref=e1341]:
+                  - generic [ref=e1342]: Wildfire
+                  - generic [ref=e1343]: For teams that are running at scale
+                - generic [ref=e1344]:
+                  - paragraph [ref=e1345]:
+                    - generic [ref=e1346]: $
+                    - generic [ref=e1348]:
+                      - generic [ref=e1353]: "6"
+                      - generic [ref=e1358]: "9"
+                      - generic [ref=e1363]: "9"
+                    - generic [ref=e1364]:
+                      - text: $
+                      - generic [ref=e1366]:
+                        - generic [ref=e1371]: "8"
+                        - generic [ref=e1376]: "9"
+                        - generic [ref=e1381]: "9"
+                    - generic [ref=e1382]: per month
+                  - generic [ref=e1383]: + 0% affiliate revenue
+                - link "Start a free trial" [ref=e1384] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e1385]: Start a free trial
+              - list [ref=e1388]:
+                - listitem [ref=e1389]:
+                  - img [ref=e1391]
+                  - generic [ref=e1393]: Everything in Blaze +
+                - listitem [ref=e1394]:
+                  - img [ref=e1396]
+                  - generic [ref=e1398]: Unlimited active campaigns
+                - listitem [ref=e1399]:
+                  - img [ref=e1401]
+                  - generic [ref=e1403]: Full-fraud protection
+                - listitem [ref=e1404]:
+                  - img [ref=e1406]
+                  - generic [ref=e1408]: Add multiple stores
+                - listitem [ref=e1409]:
+                  - img [ref=e1411]
+                  - generic [ref=e1413]: Priority roadmap access
+                - listitem [ref=e1414]:
+                  - img [ref=e1416]
+                  - generic [ref=e1418]: Custom reports & integrations
+                - listitem [ref=e1419]:
+                  - img [ref=e1421]
+                  - generic [ref=e1423]: Unlimited seats
+                - listitem [ref=e1424]:
+                  - img [ref=e1426]
+                  - generic [ref=e1428]: Dedicated Customer Success Manager
+      - generic [ref=e1432]:
+        - generic [ref=e1433]:
+          - generic "05 / Objections" [ref=e1434]:
+            - generic [ref=e1436]: "05"
+            - generic [ref=e1438]: /
+            - generic [ref=e1440]: Objections
+          - heading "Things you won't say after SATHI" [level=2] [ref=e1441]:
+            - generic [ref=e1443]: Things
+            - generic [ref=e1445]: you
+            - generic [ref=e1447]: won't
+            - generic [ref=e1449]: say
+            - generic [ref=e1451]: after
+            - generic [ref=e1453]: SATHI
+        - generic [ref=e1454]:
+          - generic [ref=e1456]:
+            - generic [ref=e1457]:
+              - generic [ref=e1458]:
+                - img [ref=e1460]
+                - generic [ref=e1470]: "\"CFO wants attribution data and idk what to show her\""
+              - generic [ref=e1472]:
+                - img [ref=e1474]
+                - generic [ref=e1481]:
+                  - text: “Found our affiliate code on
+                  - emphasis [ref=e1482]: "{redacted}"
+                  - text: . No idea how long it's been there. RIP”
+              - generic [ref=e1484]:
+                - img [ref=e1486]
+                - generic [ref=e1496]: “Payouts failed this month and now three partners are DMing me. It's 9am.”
+              - generic [ref=e1498]:
+                - img [ref=e1500]
+                - generic [ref=e1507]: “Migrating off our old tool feels impossible. I don't even know where to start.”
+            - generic [ref=e1509]:
+              - generic [ref=e1510]:
+                - img [ref=e1512]
+                - generic [ref=e1522]: "\"CFO wants attribution data and idk what to show her\""
+              - generic [ref=e1524]:
+                - img [ref=e1526]
+                - generic [ref=e1533]:
+                  - text: “Found our affiliate code on
+                  - emphasis [ref=e1534]: "{redacted}"
+                  - text: . No idea how long it's been there. RIP”
+              - generic [ref=e1536]:
+                - img [ref=e1538]
+                - generic [ref=e1548]: “Payouts failed this month and now three partners are DMing me. It's 9am.”
+              - generic [ref=e1550]:
+                - img [ref=e1552]
+                - generic [ref=e1559]: “Migrating off our old tool feels impossible. I don't even know where to start.”
+            - generic [ref=e1561]:
+              - generic [ref=e1562]:
+                - img [ref=e1564]
+                - generic [ref=e1574]: "\"CFO wants attribution data and idk what to show her\""
+              - generic [ref=e1576]:
+                - img [ref=e1578]
+                - generic [ref=e1585]:
+                  - text: “Found our affiliate code on
+                  - emphasis [ref=e1586]: "{redacted}"
+                  - text: . No idea how long it's been there. RIP”
+              - generic [ref=e1588]:
+                - img [ref=e1590]
+                - generic [ref=e1600]: “Payouts failed this month and now three partners are DMing me. It's 9am.”
+              - generic [ref=e1602]:
+                - img [ref=e1604]
+                - generic [ref=e1611]: “Migrating off our old tool feels impossible. I don't even know where to start.”
+          - generic [ref=e1614]:
+            - generic [ref=e1615]:
+              - generic [ref=e1616]:
+                - img [ref=e1618]
+                - generic [ref=e1625]: “Someone posted our code on reddit AGAIN. I’m so tired”
+              - generic [ref=e1627]:
+                - img [ref=e1629]
+                - generic [ref=e1639]: “Migrating off our old tool feels impossible. I don't even know where to start.”
+              - generic [ref=e1641]:
+                - img [ref=e1643]
+                - generic [ref=e1650]: “We onboard ~20 affiliates a month, half of them never make a second sale. Why?”
+              - generic [ref=e1652]:
+                - img [ref=e1654]
+                - generic [ref=e1664]: “Migrating off our old tool feels impossible. I don't even know where to start.”
+            - generic [ref=e1666]:
+              - generic [ref=e1667]:
+                - img [ref=e1669]
+                - generic [ref=e1676]: “Someone posted our code on reddit AGAIN. I’m so tired”
+              - generic [ref=e1678]:
+                - img [ref=e1680]
+                - generic [ref=e1690]: “Migrating off our old tool feels impossible. I don't even know where to start.”
+              - generic [ref=e1692]:
+                - img [ref=e1694]
+                - generic [ref=e1701]: “We onboard ~20 affiliates a month, half of them never make a second sale. Why?”
+              - generic [ref=e1703]:
+                - img [ref=e1705]
+                - generic [ref=e1715]: “Migrating off our old tool feels impossible. I don't even know where to start.”
+            - generic [ref=e1717]:
+              - generic [ref=e1718]:
+                - img [ref=e1720]
+                - generic [ref=e1727]: “Someone posted our code on reddit AGAIN. I’m so tired”
+              - generic [ref=e1729]:
+                - img [ref=e1731]
+                - generic [ref=e1741]: “Migrating off our old tool feels impossible. I don't even know where to start.”
+              - generic [ref=e1743]:
+                - img [ref=e1745]
+                - generic [ref=e1752]: “We onboard ~20 affiliates a month, half of them never make a second sale. Why?”
+              - generic [ref=e1754]:
+                - img [ref=e1756]
+                - generic [ref=e1766]: “Migrating off our old tool feels impossible. I don't even know where to start.”
+      - generic [ref=e1768]:
+        - generic [ref=e1774]:
+          - generic [ref=e1775]:
+            - generic "06 / CTA" [ref=e1776]:
+              - generic [ref=e1778]: "06"
+              - generic [ref=e1780]: /
+              - generic [ref=e1782]: CTA
+            - heading "Can you see what’s coming?" [level=2] [ref=e1783]:
+              - generic [ref=e1785]: Can
+              - generic [ref=e1787]: you
+              - generic [ref=e1789]: see
+              - generic [ref=e1791]: what’s
+              - generic [ref=e1793]: coming?
+            - generic "No warrior ever lost because they lacked courage. They lost because they couldn't see.You've seen what your program is missing. The attribution gaps." [ref=e1795]:
+              - generic [ref=e1797]: "No"
+              - generic [ref=e1799]: warrior
+              - generic [ref=e1801]: ever
+              - generic [ref=e1803]: lost
+              - generic [ref=e1805]: because
+              - generic [ref=e1807]: they
+              - generic [ref=e1809]: lacked
+              - generic [ref=e1811]: courage.
+              - generic [ref=e1813]: They
+              - generic [ref=e1815]: lost
+              - generic [ref=e1817]: because
+              - generic [ref=e1819]: they
+              - generic [ref=e1821]: couldn't
+              - generic [ref=e1823]: see.
+              - generic [ref=e1825]: You've
+              - generic [ref=e1827]: seen
+              - generic [ref=e1829]: what
+              - generic [ref=e1831]: your
+              - generic [ref=e1833]: program
+              - generic [ref=e1835]: is
+              - generic [ref=e1837]: missing.
+              - generic [ref=e1839]: The
+              - generic [ref=e1841]: attribution
+              - generic [ref=e1843]: gaps.
+          - iframe [ref=e1848]:
+            - generic [active] [ref=f1e1]:
+              - img
+              - main [ref=f1e3]:
+                - generic [ref=f1e4]:
+                  - generic [ref=f1e5]:
+                    - generic [ref=f1e9]:
+                      - list [ref=f1e10]:
+                        - listitem [ref=f1e11]:
+                          - link "Vishal Jaiswal" [ref=f1e12] [cursor=pointer]:
+                            - /url: https://cal.com/vishal-j?redirect=false
+                            - img "Vishal Jaiswal" [ref=f1e14]
+                      - paragraph [ref=f1e15]: Vishal Jaiswal
+                      - heading "Intro Meeting" [level=1] [ref=f1e16]
+                      - generic [ref=f1e17]:
+                        - generic [ref=f1e18]:
+                          - img [ref=f1e19]
+                          - generic [ref=f1e21]: 15m
+                        - generic [ref=f1e25]:
+                          - img "Google Meet icon" [ref=f1e26]
+                          - paragraph [ref=f1e27]: Google Meet
+                        - generic [ref=f1e28] [cursor=pointer]:
+                          - img [ref=f1e29]
+                          - generic [ref=f1e37]:
+                            - generic [ref=f1e38]:
+                              - paragraph [ref=f1e40]: Asia/Kolkata
+                              - combobox "Timezone Select" [ref=f1e42]
+                            - img [ref=f1e46]
+                    - generic [ref=f1e49]:
+                      - generic [ref=f1e50]:
+                        - time [ref=f1e52]:
+                          - strong [ref=f1e53]: April
+                          - text: "2026"
+                        - generic [ref=f1e55]:
+                          - button "View previous month" [disabled] [ref=f1e56]:
+                            - img [ref=f1e57]
+                          - button "View next month" [ref=f1e59] [cursor=pointer]:
+                            - img [ref=f1e60]
+                      - generic [ref=f1e62]:
+                        - generic [ref=f1e63]: Sun
+                        - generic [ref=f1e64]: Mon
+                        - generic [ref=f1e65]: Tue
+                        - generic [ref=f1e66]: Wed
+                        - generic [ref=f1e67]: Thu
+                        - generic [ref=f1e68]: Fri
+                        - generic [ref=f1e69]: Sat
+                      - generic [ref=f1e70]:
+                        - button "1" [disabled] [ref=f1e75]
+                        - button "2" [disabled] [ref=f1e77]
+                        - button "3" [disabled] [ref=f1e79]
+                        - button "4" [disabled] [ref=f1e81]
+                        - button "5" [disabled] [ref=f1e83]
+                        - button "6" [disabled] [ref=f1e85]
+                        - button "7" [disabled] [ref=f1e87]
+                        - button "8" [disabled] [ref=f1e89]
+                        - button "9" [disabled] [ref=f1e91]
+                        - button "10 Today" [disabled] [ref=f1e93]:
+                          - text: "10"
+                          - generic [ref=f1e95]: Today
+                        - button "11" [disabled] [ref=f1e97]
+                        - button "12" [disabled] [ref=f1e99]
+                        - button "13" [ref=f1e101]
+                        - button "14" [ref=f1e103]
+                        - button "15" [ref=f1e105]
+                        - button "16" [ref=f1e107]
+                        - button "17" [ref=f1e109]
+                        - button "18" [disabled] [ref=f1e111]
+                        - button "19" [disabled] [ref=f1e113]
+                        - button "20" [ref=f1e115]
+                        - button "21" [ref=f1e117]
+                        - button "22" [ref=f1e119]
+                        - button "23" [ref=f1e121]
+                        - button "24" [ref=f1e123]
+                        - button "25" [disabled] [ref=f1e125]
+                        - button "26" [disabled] [ref=f1e127]
+                        - button "27" [ref=f1e129]
+                        - button "28" [ref=f1e131]
+                        - button "29" [ref=f1e133]
+                        - button "30" [ref=f1e135]
+                    - generic [ref=f1e136]:
+                      - generic [ref=f1e138]:
+                        - generic [ref=f1e139]:
+                          - text: Mon
+                          - generic [ref=f1e140]: "13"
+                        - group "Time format" [ref=f1e142]:
+                          - radio "12h" [checked] [ref=f1e143] [cursor=pointer]:
+                            - generic [ref=f1e144]: 12h
+                          - radio "24h" [ref=f1e145] [cursor=pointer]:
+                            - generic [ref=f1e146]: 24h
+                      - generic [ref=f1e150]:
+                        - button "9:00am" [ref=f1e152] [cursor=pointer]:
+                          - generic [ref=f1e154]: 9:00am
+                        - button "9:15am" [ref=f1e156] [cursor=pointer]:
+                          - generic [ref=f1e158]: 9:15am
+                        - button "9:30am" [ref=f1e160] [cursor=pointer]:
+                          - generic [ref=f1e162]: 9:30am
+                        - button "9:45am" [ref=f1e164] [cursor=pointer]:
+                          - generic [ref=f1e166]: 9:45am
+                        - button "10:00am" [ref=f1e168] [cursor=pointer]:
+                          - generic [ref=f1e170]: 10:00am
+                        - button "10:15am" [ref=f1e172] [cursor=pointer]:
+                          - generic [ref=f1e174]: 10:15am
+                        - button "11:00am" [ref=f1e176] [cursor=pointer]:
+                          - generic [ref=f1e178]: 11:00am
+                        - button "11:15am" [ref=f1e180] [cursor=pointer]:
+                          - generic [ref=f1e182]: 11:15am
+                        - button "11:30am" [ref=f1e184] [cursor=pointer]:
+                          - generic [ref=f1e186]: 11:30am
+                        - button "11:45am" [ref=f1e188] [cursor=pointer]:
+                          - generic [ref=f1e190]: 11:45am
+                        - button "12:00pm" [ref=f1e192] [cursor=pointer]:
+                          - generic [ref=f1e194]: 12:00pm
+                        - button "12:15pm" [ref=f1e196] [cursor=pointer]:
+                          - generic [ref=f1e198]: 12:15pm
+                        - button "12:30pm" [ref=f1e200] [cursor=pointer]:
+                          - generic [ref=f1e202]: 12:30pm
+                        - button "12:45pm" [ref=f1e204] [cursor=pointer]:
+                          - generic [ref=f1e206]: 12:45pm
+                        - button "1:00pm" [ref=f1e208] [cursor=pointer]:
+                          - generic [ref=f1e210]: 1:00pm
+                        - button "1:15pm" [ref=f1e212] [cursor=pointer]:
+                          - generic [ref=f1e214]: 1:15pm
+                        - button "1:30pm" [ref=f1e216] [cursor=pointer]:
+                          - generic [ref=f1e218]: 1:30pm
+                        - button "1:45pm" [ref=f1e220] [cursor=pointer]:
+                          - generic [ref=f1e222]: 1:45pm
+                        - button "2:00pm" [ref=f1e224] [cursor=pointer]:
+                          - generic [ref=f1e226]: 2:00pm
+                        - button "2:15pm" [ref=f1e228] [cursor=pointer]:
+                          - generic [ref=f1e230]: 2:15pm
+                        - button "2:30pm" [ref=f1e232] [cursor=pointer]:
+                          - generic [ref=f1e234]: 2:30pm
+                        - button "2:45pm" [ref=f1e236] [cursor=pointer]:
+                          - generic [ref=f1e238]: 2:45pm
+                        - button "3:00pm" [ref=f1e240] [cursor=pointer]:
+                          - generic [ref=f1e242]: 3:00pm
+                        - button "3:15pm" [ref=f1e244] [cursor=pointer]:
+                          - generic [ref=f1e246]: 3:15pm
+                        - button "3:30pm" [ref=f1e248] [cursor=pointer]:
+                          - generic [ref=f1e250]: 3:30pm
+                        - button "3:45pm" [ref=f1e252] [cursor=pointer]:
+                          - generic [ref=f1e254]: 3:45pm
+                        - button "4:00pm" [ref=f1e256] [cursor=pointer]:
+                          - generic [ref=f1e258]: 4:00pm
+                        - button "4:15pm" [ref=f1e260] [cursor=pointer]:
+                          - generic [ref=f1e262]: 4:15pm
+                        - button "4:30pm" [ref=f1e264] [cursor=pointer]:
+                          - generic [ref=f1e266]: 4:30pm
+                        - button "4:45pm" [ref=f1e268] [cursor=pointer]:
+                          - generic [ref=f1e270]: 4:45pm
+                  - link "Cal.com Logo" [ref=f1e273] [cursor=pointer]:
+                    - /url: https://go.cal.com/booking
+                    - img "Cal.com Logo" [ref=f1e274]
+                - region "Notifications alt+T"
+              - alert [ref=f1e275]
+              - generic:
+                - region "Notifications"
+              - generic:
+                - region "Notifications"
+        - generic [ref=e1852]:
+          - heading "Your affiliate program is losing money right now. Codes are leaking. Sales are unattributed.Creators are posting for competitors.Every week you wait, the gap between what your program earns and what’s possible widens. And that gap is where programs die.You've seen the battlefield. You know what's at stake. Step into the arena. Let’s do affiliate marketing the way it’s meant to be done." [level=2] [ref=e1853]:
+            - generic [ref=e1854]:
+              - generic [ref=e1855]: "Y"
+              - generic [ref=e1856]: o
+              - generic [ref=e1857]: u
+              - generic [ref=e1858]: r
+            - generic [ref=e1859]:
+              - generic [ref=e1860]: a
+              - generic [ref=e1861]: f
+              - generic [ref=e1862]: f
+              - generic [ref=e1863]: i
+              - generic [ref=e1864]: l
+              - generic [ref=e1865]: i
+              - generic [ref=e1866]: a
+              - generic [ref=e1867]: t
+              - generic [ref=e1868]: e
+            - generic [ref=e1869]:
+              - generic [ref=e1870]: p
+              - generic [ref=e1871]: r
+              - generic [ref=e1872]: o
+              - generic [ref=e1873]: g
+              - generic [ref=e1874]: r
+              - generic [ref=e1875]: a
+              - generic [ref=e1876]: m
+            - generic [ref=e1877]:
+              - generic [ref=e1878]: i
+              - generic [ref=e1879]: s
+            - generic [ref=e1880]:
+              - generic [ref=e1881]: l
+              - generic [ref=e1882]: o
+              - generic [ref=e1883]: s
+              - generic [ref=e1884]: i
+              - generic [ref=e1885]: "n"
+              - generic [ref=e1886]: g
+            - generic [ref=e1887]:
+              - generic [ref=e1888]: m
+              - generic [ref=e1889]: o
+              - generic [ref=e1890]: "n"
+              - generic [ref=e1891]: e
+              - generic [ref=e1892]: "y"
+            - generic [ref=e1893]:
+              - generic [ref=e1894]: r
+              - generic [ref=e1895]: i
+              - generic [ref=e1896]: g
+              - generic [ref=e1897]: h
+              - generic [ref=e1898]: t
+            - generic [ref=e1899]:
+              - generic [ref=e1900]: "n"
+              - generic [ref=e1901]: o
+              - generic [ref=e1902]: w
+              - generic [ref=e1903]: .
+            - generic [ref=e1904]:
+              - generic [ref=e1905]: C
+              - generic [ref=e1906]: o
+              - generic [ref=e1907]: d
+              - generic [ref=e1908]: e
+              - generic [ref=e1909]: s
+            - generic [ref=e1910]:
+              - generic [ref=e1911]: a
+              - generic [ref=e1912]: r
+              - generic [ref=e1913]: e
+            - generic [ref=e1914]:
+              - generic [ref=e1915]: l
+              - generic [ref=e1916]: e
+              - generic [ref=e1917]: a
+              - generic [ref=e1918]: k
+              - generic [ref=e1919]: i
+              - generic [ref=e1920]: "n"
+              - generic [ref=e1921]: g
+              - generic [ref=e1922]: .
+            - generic [ref=e1923]:
+              - generic [ref=e1924]: S
+              - generic [ref=e1925]: a
+              - generic [ref=e1926]: l
+              - generic [ref=e1927]: e
+              - generic [ref=e1928]: s
+            - generic [ref=e1929]:
+              - generic [ref=e1930]: a
+              - generic [ref=e1931]: r
+              - generic [ref=e1932]: e
+            - generic [ref=e1933]:
+              - generic [ref=e1934]: u
+              - generic [ref=e1935]: "n"
+              - generic [ref=e1936]: a
+              - generic [ref=e1937]: t
+              - generic [ref=e1938]: t
+              - generic [ref=e1939]: r
+              - generic [ref=e1940]: i
+              - generic [ref=e1941]: b
+              - generic [ref=e1942]: u
+              - generic [ref=e1943]: t
+              - generic [ref=e1944]: e
+              - generic [ref=e1945]: d
+              - generic [ref=e1946]: .
+            - generic [ref=e1947]:
+              - generic [ref=e1948]: C
+              - generic [ref=e1949]: r
+              - generic [ref=e1950]: e
+              - generic [ref=e1951]: a
+              - generic [ref=e1952]: t
+              - generic [ref=e1953]: o
+              - generic [ref=e1954]: r
+              - generic [ref=e1955]: s
+            - generic [ref=e1956]:
+              - generic [ref=e1957]: a
+              - generic [ref=e1958]: r
+              - generic [ref=e1959]: e
+            - generic [ref=e1960]:
+              - generic [ref=e1961]: p
+              - generic [ref=e1962]: o
+              - generic [ref=e1963]: s
+              - generic [ref=e1964]: t
+              - generic [ref=e1965]: i
+              - generic [ref=e1966]: "n"
+              - generic [ref=e1967]: g
+            - generic [ref=e1968]:
+              - generic [ref=e1969]: f
+              - generic [ref=e1970]: o
+              - generic [ref=e1971]: r
+            - generic [ref=e1972]:
+              - generic [ref=e1973]: c
+              - generic [ref=e1974]: o
+              - generic [ref=e1975]: m
+              - generic [ref=e1976]: p
+              - generic [ref=e1977]: e
+              - generic [ref=e1978]: t
+              - generic [ref=e1979]: i
+              - generic [ref=e1980]: t
+              - generic [ref=e1981]: o
+              - generic [ref=e1982]: r
+              - generic [ref=e1983]: s
+              - generic [ref=e1984]: .
+            - generic [ref=e1985]:
+              - generic [ref=e1986]: E
+              - generic [ref=e1987]: v
+              - generic [ref=e1988]: e
+              - generic [ref=e1989]: r
+              - generic [ref=e1990]: "y"
+            - generic [ref=e1991]:
+              - generic [ref=e1992]: w
+              - generic [ref=e1993]: e
+              - generic [ref=e1994]: e
+              - generic [ref=e1995]: k
+            - generic [ref=e1996]:
+              - generic [ref=e1997]: "y"
+              - generic [ref=e1998]: o
+              - generic [ref=e1999]: u
+            - generic [ref=e2000]:
+              - generic [ref=e2001]: w
+              - generic [ref=e2002]: a
+              - generic [ref=e2003]: i
+              - generic [ref=e2004]: t
+              - generic [ref=e2005]: ","
+            - generic [ref=e2006]:
+              - generic [ref=e2007]: t
+              - generic [ref=e2008]: h
+              - generic [ref=e2009]: e
+            - generic [ref=e2010]:
+              - generic [ref=e2011]: g
+              - generic [ref=e2012]: a
+              - generic [ref=e2013]: p
+            - generic [ref=e2014]:
+              - generic [ref=e2015]: b
+              - generic [ref=e2016]: e
+              - generic [ref=e2017]: t
+              - generic [ref=e2018]: w
+              - generic [ref=e2019]: e
+              - generic [ref=e2020]: e
+              - generic [ref=e2021]: "n"
+            - generic [ref=e2022]:
+              - generic [ref=e2023]: w
+              - generic [ref=e2024]: h
+              - generic [ref=e2025]: a
+              - generic [ref=e2026]: t
+            - generic [ref=e2027]:
+              - generic [ref=e2028]: "y"
+              - generic [ref=e2029]: o
+              - generic [ref=e2030]: u
+              - generic [ref=e2031]: r
+            - generic [ref=e2032]:
+              - generic [ref=e2033]: p
+              - generic [ref=e2034]: r
+              - generic [ref=e2035]: o
+              - generic [ref=e2036]: g
+              - generic [ref=e2037]: r
+              - generic [ref=e2038]: a
+              - generic [ref=e2039]: m
+            - generic [ref=e2040]:
+              - generic [ref=e2041]: e
+              - generic [ref=e2042]: a
+              - generic [ref=e2043]: r
+              - generic [ref=e2044]: "n"
+              - generic [ref=e2045]: s
+            - generic [ref=e2046]:
+              - generic [ref=e2047]: a
+              - generic [ref=e2048]: "n"
+              - generic [ref=e2049]: d
+            - generic [ref=e2050]:
+              - generic [ref=e2051]: w
+              - generic [ref=e2052]: h
+              - generic [ref=e2053]: a
+              - generic [ref=e2054]: t
+              - generic [ref=e2055]: ’
+              - generic [ref=e2056]: s
+            - generic [ref=e2057]:
+              - generic [ref=e2058]: p
+              - generic [ref=e2059]: o
+              - generic [ref=e2060]: s
+              - generic [ref=e2061]: s
+              - generic [ref=e2062]: i
+              - generic [ref=e2063]: b
+              - generic [ref=e2064]: l
+              - generic [ref=e2065]: e
+            - generic [ref=e2066]:
+              - generic [ref=e2067]: w
+              - generic [ref=e2068]: i
+              - generic [ref=e2069]: d
+              - generic [ref=e2070]: e
+              - generic [ref=e2071]: "n"
+              - generic [ref=e2072]: s
+              - generic [ref=e2073]: .
+            - generic [ref=e2074]:
+              - generic [ref=e2075]: A
+              - generic [ref=e2076]: "n"
+              - generic [ref=e2077]: d
+            - generic [ref=e2078]:
+              - generic [ref=e2079]: t
+              - generic [ref=e2080]: h
+              - generic [ref=e2081]: a
+              - generic [ref=e2082]: t
+            - generic [ref=e2083]:
+              - generic [ref=e2084]: g
+              - generic [ref=e2085]: a
+              - generic [ref=e2086]: p
+            - generic [ref=e2087]:
+              - generic [ref=e2088]: i
+              - generic [ref=e2089]: s
+            - generic [ref=e2090]:
+              - generic [ref=e2091]: w
+              - generic [ref=e2092]: h
+              - generic [ref=e2093]: e
+              - generic [ref=e2094]: r
+              - generic [ref=e2095]: e
+            - generic [ref=e2096]:
+              - generic [ref=e2097]: p
+              - generic [ref=e2098]: r
+              - generic [ref=e2099]: o
+              - generic [ref=e2100]: g
+              - generic [ref=e2101]: r
+              - generic [ref=e2102]: a
+              - generic [ref=e2103]: m
+              - generic [ref=e2104]: s
+            - generic [ref=e2105]:
+              - generic [ref=e2106]: d
+              - generic [ref=e2107]: i
+              - generic [ref=e2108]: e
+              - generic [ref=e2109]: .
+            - generic [ref=e2110]:
+              - generic [ref=e2111]: "Y"
+              - generic [ref=e2112]: o
+              - generic [ref=e2113]: u
+              - generic [ref=e2114]: "'"
+              - generic [ref=e2115]: v
+              - generic [ref=e2116]: e
+            - generic [ref=e2117]:
+              - generic [ref=e2118]: s
+              - generic [ref=e2119]: e
+              - generic [ref=e2120]: e
+              - generic [ref=e2121]: "n"
+            - generic [ref=e2122]:
+              - generic [ref=e2123]: t
+              - generic [ref=e2124]: h
+              - generic [ref=e2125]: e
+            - generic [ref=e2126]:
+              - generic [ref=e2127]: b
+              - generic [ref=e2128]: a
+              - generic [ref=e2129]: t
+              - generic [ref=e2130]: t
+              - generic [ref=e2131]: l
+              - generic [ref=e2132]: e
+              - generic [ref=e2133]: f
+              - generic [ref=e2134]: i
+              - generic [ref=e2135]: e
+              - generic [ref=e2136]: l
+              - generic [ref=e2137]: d
+              - generic [ref=e2138]: .
+            - generic [ref=e2139]:
+              - generic [ref=e2140]: "Y"
+              - generic [ref=e2141]: o
+              - generic [ref=e2142]: u
+            - generic [ref=e2143]:
+              - generic [ref=e2144]: k
+              - generic [ref=e2145]: "n"
+              - generic [ref=e2146]: o
+              - generic [ref=e2147]: w
+            - generic [ref=e2148]:
+              - generic [ref=e2149]: w
+              - generic [ref=e2150]: h
+              - generic [ref=e2151]: a
+              - generic [ref=e2152]: t
+              - generic [ref=e2153]: "'"
+              - generic [ref=e2154]: s
+            - generic [ref=e2155]:
+              - generic [ref=e2156]: a
+              - generic [ref=e2157]: t
+            - generic [ref=e2158]:
+              - generic [ref=e2159]: s
+              - generic [ref=e2160]: t
+              - generic [ref=e2161]: a
+              - generic [ref=e2162]: k
+              - generic [ref=e2163]: e
+              - generic [ref=e2164]: .
+            - generic [ref=e2165]:
+              - generic [ref=e2166]: S
+              - generic [ref=e2167]: t
+              - generic [ref=e2168]: e
+              - generic [ref=e2169]: p
+            - generic [ref=e2170]:
+              - generic [ref=e2171]: i
+              - generic [ref=e2172]: "n"
+              - generic [ref=e2173]: t
+              - generic [ref=e2174]: o
+            - generic [ref=e2175]:
+              - generic [ref=e2176]: t
+              - generic [ref=e2177]: h
+              - generic [ref=e2178]: e
+            - generic [ref=e2179]:
+              - generic [ref=e2180]: a
+              - generic [ref=e2181]: r
+              - generic [ref=e2182]: e
+              - generic [ref=e2183]: "n"
+              - generic [ref=e2184]: a
+              - generic [ref=e2185]: .
+            - generic [ref=e2186]:
+              - generic [ref=e2187]: L
+              - generic [ref=e2188]: e
+              - generic [ref=e2189]: t
+              - generic [ref=e2190]: ’
+              - generic [ref=e2191]: s
+            - generic [ref=e2192]:
+              - generic [ref=e2193]: d
+              - generic [ref=e2194]: o
+            - generic [ref=e2195]:
+              - generic [ref=e2196]: a
+              - generic [ref=e2197]: f
+              - generic [ref=e2198]: f
+              - generic [ref=e2199]: i
+              - generic [ref=e2200]: l
+              - generic [ref=e2201]: i
+              - generic [ref=e2202]: a
+              - generic [ref=e2203]: t
+              - generic [ref=e2204]: e
+            - generic [ref=e2205]:
+              - generic [ref=e2206]: m
+              - generic [ref=e2207]: a
+              - generic [ref=e2208]: r
+              - generic [ref=e2209]: k
+              - generic [ref=e2210]: e
+              - generic [ref=e2211]: t
+              - generic [ref=e2212]: i
+              - generic [ref=e2213]: "n"
+              - generic [ref=e2214]: g
+            - generic [ref=e2215]:
+              - generic [ref=e2216]: t
+              - generic [ref=e2217]: h
+              - generic [ref=e2218]: e
+            - generic [ref=e2219]:
+              - generic [ref=e2220]: w
+              - generic [ref=e2221]: a
+              - generic [ref=e2222]: "y"
+            - generic [ref=e2223]:
+              - generic [ref=e2224]: i
+              - generic [ref=e2225]: t
+              - generic [ref=e2226]: ’
+              - generic [ref=e2227]: s
+            - generic [ref=e2228]:
+              - generic [ref=e2229]: m
+              - generic [ref=e2230]: e
+              - generic [ref=e2231]: a
+              - generic [ref=e2232]: "n"
+              - generic [ref=e2233]: t
+            - generic [ref=e2234]:
+              - generic [ref=e2235]: t
+              - generic [ref=e2236]: o
+            - generic [ref=e2237]:
+              - generic [ref=e2238]: b
+              - generic [ref=e2239]: e
+            - generic [ref=e2240]:
+              - generic [ref=e2241]: d
+              - generic [ref=e2242]: o
+              - generic [ref=e2243]: "n"
+              - generic [ref=e2244]: e
+              - generic [ref=e2245]: .
+          - generic [ref=e2246]:
+            - link "Start a free trial" [ref=e2247] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e2248]: Start a free trial
+            - link "Book a demo" [ref=e2249] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e2250]: Book a demo
+        - generic [ref=e2254]:
+          - generic [ref=e2256]:
+            - generic [ref=e2259]:
+              - link [ref=e2260] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e2261]
+              - generic [ref=e2270]:
+                - generic [ref=e2271]: Stay up to date
+                - form "Subscribe Form" [ref=e2273]:
+                  - textbox "Enter your email" [ref=e2274]
+                  - generic [ref=e2275]:
+                    - button "Submit" [ref=e2276] [cursor=pointer]
+                    - link "Signup" [ref=e2277] [cursor=pointer]:
+                      - /url: "#"
+                      - generic [ref=e2278]: Signup
+                - generic [ref=e2279]: By submitting this form I have read & acknowledged the Privacy Policy
+            - generic [ref=e2280]:
+              - generic [ref=e2281]:
+                - link "Top Categories" [ref=e2282] [cursor=pointer]:
+                  - /url: "#"
+                - link "Project Management" [ref=e2283] [cursor=pointer]:
+                  - /url: "#"
+                - link "Video Conferencing" [ref=e2284] [cursor=pointer]:
+                  - /url: "#"
+                - link "E-commerce" [ref=e2285] [cursor=pointer]:
+                  - /url: "#"
+                - link "Marketing Automation" [ref=e2286] [cursor=pointer]:
+                  - /url: "#"
+              - generic [ref=e2287]:
+                - link "Company" [ref=e2288] [cursor=pointer]:
+                  - /url: "#"
+                - link "About" [ref=e2289] [cursor=pointer]:
+                  - /url: "#"
+                - link "Blogs" [ref=e2290] [cursor=pointer]:
+                  - /url: "#"
+                - link "Contact" [ref=e2291] [cursor=pointer]:
+                  - /url: "#"
+              - generic [ref=e2292]:
+                - link "Policies" [ref=e2293] [cursor=pointer]:
+                  - /url: "#"
+                - link "Community Guidelines" [ref=e2294] [cursor=pointer]:
+                  - /url: "#"
+                - link "Terms of Use" [ref=e2295] [cursor=pointer]:
+                  - /url: "#"
+                - link "Privacy Policy" [ref=e2296] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e2297]:
+            - generic [ref=e2298]:
+              - link [ref=e2299] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e2301]
+              - link [ref=e2303] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e2305]
+              - link [ref=e2307] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e2309]
+              - link [ref=e2311] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e2313]
+              - link [ref=e2315] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e2317]
+            - generic [ref=e2319]: 2026 SATHI. All rights reserved.
+            - link "Designed by Studio Maydit" [ref=e2321] [cursor=pointer]:
+              - /url: "#"
+  - button "Project Links 3" [ref=e2324] [cursor=pointer]:
+    - generic [ref=e2325]:
+      - generic [ref=e2326]: Project Links
+      - generic [ref=e2327]: "3"
+    - img [ref=e2328]
+  - link "Made in Webflow" [ref=e2330] [cursor=pointer]:
+    - /url: https://webflow.com?utm_campaign=brandjs
+    - img "Made in Webflow" [ref=e2331]

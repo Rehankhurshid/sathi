@@ -1,0 +1,20 @@
+[    3908ms] [LOG] 
+
+
+
+%cFinsweet Components font-size: 1.25rem;font-weight: bold;line-height: 1.3;font-family: Graphik web, sans-serif;color: #111;background: #51ffcb;padding: 0.75rem 1rem;border-radius: 0.25rem @ https://cdn.jsdelivr.net/npm/@finsweet/fs-components@2/fs-components.js?v=1775827328472:0
+[    3908ms] [LOG] This site uses Finsweet Components. Visit https://finsweet.com/components to learn more.
+
+
+
+
+ @ https://cdn.jsdelivr.net/npm/@finsweet/fs-components@2/fs-components.js?v=1775827328472:4
+[    4992ms] [LOG] Project Links Widget: Initializing on sathi-web.webflow.io @ https://app.activeset.co/widget.js:1132
+[   10150ms] [WARNING] `markdownToSafeHTML` should not be imported on the client side. @ https://app.cal.com/_next/static/chunks/13fnjw.jtfpzl.js:8
+[   10175ms] [WARNING] [DEPRECATED] Use `createWithEqualityFn` instead of `create` or use `useStoreWithEqualityFn` instead of `useStore`. They can be imported from 'zustand/traditional'. https://github.com/pmndrs/zustand/discussions/1937 @ https://app.cal.com/_next/static/chunks/13fnjw.jtfpzl.js:8
+[   10178ms] [WARNING] react-i18next:: You will need to pass in an i18next instance by using initReactI18next @ https://app.cal.com/_next/static/chunks/13fnjw.jtfpzl.js:8
+[   10250ms] [LOG] QuickAvailabilityCheck feature enabled: false @ https://app.cal.com/_next/static/chunks/13fnjw.jtfpzl.js:8
+[   10276ms] [LOG] QuickAvailabilityCheck feature enabled: false @ https://app.cal.com/_next/static/chunks/13fnjw.jtfpzl.js:8
+[   13172ms] [WARNING] The resource https://app.cal.com/_next/static/media/CalSansUI%5Bwght%2CGEOM%5D-s.p.17~pqx5aww0vr.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.cal.com/vishal-j/secret/embed?embed=secret&layout=month_view&useSlotsViewOnSmallScreen=true&theme=light&embedType=inline:0
+[   17159ms] [WARNING] The resource https://app.cal.com/_next/static/media/CalSansUI%5Bwght%2CGEOM%5D-s.p.17~pqx5aww0vr.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.cal.com/vishal-j/secret/embed?embed=secret&layout=month_view&useSlotsViewOnSmallScreen=true&theme=light&embedType=inline:0
+[  315159ms] [WARNING] The resource https://app.cal.com/_next/static/media/CalSansUI%5Bwght%2CGEOM%5D-s.p.17~pqx5aww0vr.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.cal.com/vishal-j/secret/embed?embed=secret&layout=month_view&useSlotsViewOnSmallScreen=true&theme=light&embedType=inline:0
