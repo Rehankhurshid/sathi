@@ -109,6 +109,7 @@ class ParallaxHero {
   #cfg;
   #baseZ = 1.2;
   #imgAspect = 1;
+  #isVisible = true;
 
   constructor(canvas, cfg = {}) {
     this.#cfg = cfg;
@@ -116,12 +117,17 @@ class ParallaxHero {
     const w = cfg.width ?? canvas.clientWidth ?? window.innerWidth;
     const h = cfg.height ?? canvas.clientHeight ?? window.innerHeight;
 
+    // Safari's Metal WebGL is slower — cap pixel ratio lower
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    const maxDPR = isSafari ? 1.5 : 2;
+
     this.#renderer = new THREE.WebGLRenderer({
       canvas,
-      antialias: true,
+      antialias: !isSafari, // skip AA on Safari — big perf win
       alpha: false,
+      powerPreference: 'high-performance',
     });
-    this.#renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    this.#renderer.setPixelRatio(Math.min(devicePixelRatio, maxDPR));
     this.#renderer.setSize(w, h, false);
 
     this.#scene = new THREE.Scene();
@@ -191,8 +197,8 @@ class ParallaxHero {
     const geo = new THREE.PlaneGeometry(
       this.#imgAspect * coverScale,
       1.0 * coverScale,
-      256,
-      256,
+      128,
+      128,
     );
 
     this.#mesh = new THREE.Mesh(geo, this.#material);
@@ -200,8 +206,14 @@ class ParallaxHero {
   }
 
   start() {
+    this.#isVisible = true;
+
     const loop = () => {
       this.#animId = requestAnimationFrame(loop);
+
+      // Skip rendering when off-screen — huge Safari perf win
+      if (!this.#isVisible) return;
+
       this.#currentMouse.lerp(this.#targetMouse, this.#cfg.lerpSpeed);
 
       this.#camera.position.x =
@@ -217,6 +229,10 @@ class ParallaxHero {
       this.#renderer.render(this.#scene, this.#camera);
     };
     loop();
+  }
+
+  setVisible(v) {
+    this.#isVisible = v;
   }
 
   onMouseMove(x, y) {
@@ -287,6 +303,13 @@ hero
 
     hero.start();
     spinner?.remove();
+
+    // Pause rendering when hero is off-screen
+    const visObs = new IntersectionObserver(
+      ([entry]) => hero.setVisible(entry.isIntersecting),
+      { threshold: 0 },
+    );
+    visObs.observe(container);
   })
   .catch((err) => {
     console.error("ParallaxHero: texture load failed", err);

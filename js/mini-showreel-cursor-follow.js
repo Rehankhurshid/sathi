@@ -117,7 +117,18 @@ y: posY
     isClosing = val;
   };
 
+  // Only run the ticker when the section is visible
+  let sectionVisible = false;
+  const sectionObs = new IntersectionObserver(
+    ([entry]) => { sectionVisible = entry.isIntersecting; },
+    { threshold: 0 },
+  );
+  sectionObs.observe(section);
+
   gsap.ticker.add(() => {
+    // Skip entirely when off-screen — saves ~60 gsap.set() calls/sec
+    if (!sectionVisible) return;
+
     const isActive =
       player.getAttribute("data-mini-showreel-status") === "active";
 
