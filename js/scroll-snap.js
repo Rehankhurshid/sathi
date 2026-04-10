@@ -46,37 +46,44 @@ window.addEventListener(
   "wheel",
   (e) => {
     const now = Date.now();
-
-    if (now - lastWheelTime < 400) return;
-    if (isScrollingToSnap) return;
-
     const inSnap = isInSnapZone();
 
-    if (!inSnap) {
-      if (isSnapping) exitSnapMode();
-      return;
-    }
-
+    // 1. If we are currently outside the zone and not snapping, let Native/Lenis scroll freely
     if (!isSnapping) {
+      if (!inSnap) return;
+
+      // CROSSING THE BOUNDARY INWARD
       enterSnapMode();
       lastWheelTime = now;
-      
+
       // Determine entry item based on scroll direction
       if (e.deltaY > 0) {
         currentSnapIndex = 0;
       } else {
         currentSnapIndex = FEATURE_COUNT - 1;
       }
-      
+
       scrollToItem(currentSnapIndex);
       return;
     }
 
+    // 2. WE ARE NOW TRAPPED IN SNAP MODE
+    
+    // If the window is currently being smooth-scrolled to an item, OR if trackpad momentum 
+    // is trailing, we ABSORB the wheel event by resetting the cooldown timer.
+    // This forces the user's trackpad to be completely silent for 400ms before accepting a new flick.
+    if (isScrollingToSnap || now - lastWheelTime < 400) {
+      lastWheelTime = now; // ABSOLUTELY CRITICAL: kills trailing trackpad momentum sweeps
+      return;
+    }
+
+    // 3. User has waited, trackpad momentum is dead. Register new deliberate flick.
     lastWheelTime = now;
 
     const direction = e.deltaY > 0 ? 1 : -1;
     const nextIndex = currentSnapIndex + direction;
 
+    // CROSSING THE BOUNDARY OUTWARD
     if (nextIndex < 0) {
       currentSnapIndex = 0;
       const topY = snapZone.getBoundingClientRect().top + window.scrollY - 2;
@@ -95,6 +102,7 @@ window.addEventListener(
       return;
     }
 
+    // SNAP TO NEXT ITEM
     currentSnapIndex = nextIndex;
     scrollToItem(currentSnapIndex);
   },
