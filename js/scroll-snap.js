@@ -57,7 +57,21 @@ window.addEventListener(
       return;
     }
 
-    enterSnapMode();
+    if (!isSnapping) {
+      enterSnapMode();
+      lastWheelTime = now;
+      
+      // Determine entry item based on scroll direction
+      if (e.deltaY > 0) {
+        currentSnapIndex = 0;
+      } else {
+        currentSnapIndex = FEATURE_COUNT - 1;
+      }
+      
+      scrollToItem(currentSnapIndex);
+      return;
+    }
+
     lastWheelTime = now;
 
     const direction = e.deltaY > 0 ? 1 : -1;
