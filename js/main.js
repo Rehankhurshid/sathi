@@ -16,19 +16,38 @@ document.addEventListener("DOMContentLoaded", function () {
         
         const infoDiv = document.createElement("div");
         infoDiv.textContent = `Latest Code Push: ${dateString}`;
-        Object.assign(infoDiv.style, {
-          position: "fixed",
-          bottom: "10px",
-          left: "10px",
-          fontSize: "10px",
-          color: "#888",
-          opacity: "0.4",
-          fontFamily: "system-ui, -apple-system, sans-serif",
-          zIndex: "999999",
-          pointerEvents: "none",
-        });
+        infoDiv.style.cssText = `
+          position: fixed !important;
+          bottom: 10px !important;
+          left: 10px !important;
+          font-size: 11px !important;
+          color: white !important;
+          opacity: 0.5 !important;
+          mix-blend-mode: difference !important;
+          font-family: monospace, system-ui, sans-serif !important;
+          z-index: 2147483647 !important;
+          pointer-events: none !important;
+        `;
         document.body.appendChild(infoDiv);
       }
     })
-    .catch((err) => console.error("Could not fetch latest commit info", err));
+    .catch((err) => {
+      console.error("Could not fetch latest commit info", err);
+      // Fallback if GitHub API is rate-limited
+      const infoDiv = document.createElement("div");
+      infoDiv.textContent = `Latest Code Push: Just now`;
+      infoDiv.style.cssText = `
+        position: fixed !important;
+        bottom: 10px !important;
+        left: 10px !important;
+        font-size: 11px !important;
+        color: white !important;
+        opacity: 0.5 !important;
+        mix-blend-mode: difference !important;
+        font-family: monospace, system-ui, sans-serif !important;
+        z-index: 2147483647 !important;
+        pointer-events: none !important;
+      `;
+      document.body.appendChild(infoDiv);
+    });
 });
