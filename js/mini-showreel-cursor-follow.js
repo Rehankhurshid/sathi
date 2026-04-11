@@ -3,9 +3,6 @@ function initMiniShowreelCursorFollow() {
   const player = document.querySelector("[data-mini-showreel-player]");
   if (!section || !player) return;
 
-  // Safari's compositor chokes on per-frame 3D perspective transforms
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
   let mouseX = window.innerWidth / 2;
   let mouseY = window.innerHeight / 2;
 
@@ -71,7 +68,7 @@ function initMiniShowreelCursorFollow() {
     xPercent: -50,
     yPercent: -50,
     transformOrigin: "50% 50%",
-    ...(isSafari ? {} : { transformPerspective: 600 }),
+    transformPerspective: 600,
   });
 
   /*player._resetToMouse = () => {
@@ -104,7 +101,7 @@ y: posY
       xPercent: -50,
       yPercent: -50,
       transformOrigin: "50% 50%",
-      ...(isSafari ? {} : { transformPerspective: 600 }),
+      transformPerspective: 600,
       x: posX,
       y: posY,
     });
@@ -166,20 +163,12 @@ y: posY
 
     currentScale += (targetScale - currentScale) * scaleLerp;
 
-    // On Safari: only update x/y (no 3D tilt) — avoids expensive perspective recomposite
-    if (isSafari) {
-      gsap.set(player, {
-        x: posX,
-        y: posY,
-      });
-    } else {
-      gsap.set(player, {
-        x: posX,
-        y: posY,
-        rotateX: currentRotateX,
-        rotateY: currentRotateY,
-        scale: currentScale,
-      });
-    }
+    gsap.set(player, {
+      x: posX,
+      y: posY,
+      rotateX: currentRotateX,
+      rotateY: currentRotateY,
+      scale: currentScale,
+    });
   });
 }
