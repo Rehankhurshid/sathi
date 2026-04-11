@@ -11,6 +11,8 @@ let isExiting = false;
 let isCooling = false;
 let lastDeltaY = 0;
 let lastDirection = 0;
+let lastExitDir = 0;       // Which direction we exited (±1), cleared after cooldown
+let exitCooldownTimer = null;
 
 // ── Helpers ──
 
@@ -75,12 +77,16 @@ function enterSnapMode() {
   lenis.stop();
 }
 
-function exitSnapMode(scrollTargetY) {
+function exitSnapMode(scrollTargetY, exitDirection) {
   if (!isSnapping) return;
   isSnapping = false;
   isAnimating = true;
   isExiting = true;
   isCooling = false;
+  lastExitDir = exitDirection || 0;
+
+  // Clear any previous cooldown
+  clearTimeout(exitCooldownTimer);
 
   if (typeof scrollTargetY === "number") {
     gsap.to(window, {
@@ -91,12 +97,15 @@ function exitSnapMode(scrollTargetY) {
         isAnimating = false;
         isExiting = false;
         lenis.start();
+        // Keep exit direction alive for a short cooldown to block re-entry
+        exitCooldownTimer = setTimeout(() => { lastExitDir = 0; }, 600);
       },
     });
   } else {
     isAnimating = false;
     isExiting = false;
     lenis.start();
+    exitCooldownTimer = setTimeout(() => { lastExitDir = 0; }, 600);
   }
 }
 
@@ -116,8 +125,18 @@ window.addEventListener(
       }
       if (!inSnap) return;
 
+      // Block re-entry if we JUST exited in this same direction
+      // (Safari fires trailing wheel events after GSAP onComplete)
+      const scrollDir = e.deltaY > 0 ? 1 : -1;
+      if (lastExitDir !== 0 && scrollDir === lastExitDir) {
+        e.preventDefault();
+        return;
+      }
+
       // Crossing into snap zone
       e.preventDefault();
+      lastExitDir = 0;
+      clearTimeout(exitCooldownTimer);
       enterSnapMode();
       lastDirection = e.deltaY > 0 ? 1 : -1;
       lastDeltaY = Math.abs(e.deltaY);
@@ -147,7 +166,7 @@ window.addEventListener(
     if (nextIndex < 0) {
       currentSnapIndex = 0;
       const topY = snapZone.getBoundingClientRect().top + window.scrollY - 2;
-      exitSnapMode(topY);
+      exitSnapMode(topY, -1);
       return;
     }
 
@@ -159,7 +178,7 @@ window.addEventListener(
         window.scrollY -
         window.innerHeight +
         2;
-      exitSnapMode(bottomY);
+      exitSnapMode(bottomY, 1);
       return;
     }
 
