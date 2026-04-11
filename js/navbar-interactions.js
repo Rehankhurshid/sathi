@@ -14,7 +14,6 @@ gsap.set(".navbar2_component", {
   ...(isSafari ? {} : { backdropFilter: "blur(0px)" }),
   backgroundColor: "transparent",
   borderColor: "transparent",
-  yPercent: -100, // Hide the navbar initially
 });
 
 loadTl.to(".navbar2_component", {
@@ -25,7 +24,6 @@ loadTl.to(".navbar2_component", {
         backgroundColor: "var(--base-color-neutral--nav-white)",
       }),
   borderColor: "var(--base-color-neutral--neutral-lightest)",
-  yPercent: 0, // Slide it in on scroll
   ease: "power2.out",
 });
 
