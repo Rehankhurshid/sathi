@@ -1,4 +1,3 @@
-if (false) {
 const loadTl = gsap.timeline({
   scrollTrigger: {
     trigger: document.body,
@@ -65,4 +64,3 @@ const navColorTriggers = [
 ];
 
 navColorTriggers.forEach((config) => createColorScrollTrigger(config));
-}

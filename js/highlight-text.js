@@ -1,5 +1,4 @@
 function initHighlightText() {
-  return; // TESTING: disabled text animation
   const headings = document.querySelectorAll("[data-highlight-text]");
   if (!headings.length) return;
 
