@@ -6,24 +6,23 @@ const loadTl = gsap.timeline({
   },
 });
 
+// Safari has a known compositing perf bug with backdrop-filter on scroll —
+// even blur(0px) forces a full-viewport recomposite every frame.
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
 gsap.set(".navbar2_component", {
-  backdropFilter: "blur(0px)",
+  ...(isSafari ? {} : { backdropFilter: "blur(0px)" }),
   backgroundColor: "transparent",
   borderColor: "transparent",
 });
 
-// Safari has a known compositing perf bug with backdrop-filter on scroll
-const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-const blurProps = isSafari
-  ? { backgroundColor: "rgba(255, 255, 255, 0.92)" }
-  : {
-      backdropFilter: "blur(6px)",
-      backgroundColor: "var(--base-color-neutral--nav-white)",
-    };
-
 loadTl.to(".navbar2_component", {
-  ...blurProps,
+  ...(isSafari
+    ? { backgroundColor: "rgba(255, 255, 255, 0.92)" }
+    : {
+        backdropFilter: "blur(6px)",
+        backgroundColor: "var(--base-color-neutral--nav-white)",
+      }),
   borderColor: "var(--base-color-neutral--neutral-lightest)",
   ease: "power2.out",
 });
