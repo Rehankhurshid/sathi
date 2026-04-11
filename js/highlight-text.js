@@ -10,24 +10,14 @@ function initHighlightText() {
     const staggerValue =
       parseFloat(heading.getAttribute("data-highlight-stagger")) || 0.05;
 
-    // Count raw text length to decide granularity.
-    // Short headings → per-character animation (looks great, few elements).
-    // Long paragraphs → per-word animation (200+ GPU layers kills Safari).
-    const textLen = heading.textContent.trim().length;
-    const useWords = textLen > 120;
-
     const split = new SplitText(heading, {
-      type: useWords ? "words" : "chars, words",
+      type: "chars, words",
       wordsClass: "split-word",
     });
 
-    const targets = useWords ? split.words : split.chars;
-
-    // force3D: false — avoids promoting each element to its own compositor
-    // layer. With 200+ elements, force3D: true creates 200+ GPU layers and
-    // Safari's compositing pipeline can't keep up on scroll.
-    gsap.set(targets, {
+    gsap.set(split.chars, {
       opacity: 0.2,
+      force3D: true,
     });
 
     const tl = gsap.timeline({
@@ -41,7 +31,7 @@ function initHighlightText() {
       },
     });
 
-    tl.to(targets, {
+    tl.to(split.chars, {
       opacity: 1,
       stagger: staggerValue,
       ease: "none",
