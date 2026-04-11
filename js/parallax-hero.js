@@ -283,10 +283,13 @@ container.style.height = vpH0 + "px";
 container.appendChild(canvas);
 
 try {
+  const isSafariFallback = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if (isSafariFallback) throw new Error("Safari detected: disabling Three.js for testing");
+  
   hero = new ParallaxHero(canvas, CFG);
 } catch {
   showFallback();
-  throw new Error("ParallaxHero: WebGL context failed");
+  throw new Error("ParallaxHero: WebGL context failed or disabled manually");
 }
 
 hero
