@@ -144,6 +144,12 @@ function initMiniShowreelPlayer() {
     setStatus("active");
     playFor(n);
 
+    const closeBtns = lb.querySelectorAll("[data-mini-showreel-close]");
+    if (closeBtns.length) {
+      gsap.set(closeBtns, { transition: "none", opacity: 0, visibility: "visible" });
+      gsap.to(closeBtns, { opacity: 1, duration: duration, ease: ease, clearProps: "all" });
+    }
+
     const state = Flip.getState(pw);
     place(pw, rectFor(tg));
 
@@ -162,6 +168,12 @@ function initMiniShowreelPlayer() {
     stopFor(n);
     setStatus("not-active");
 
+    const closeBtns = lb ? lb.querySelectorAll("[data-mini-showreel-close]") : [];
+    if (closeBtns.length) {
+      gsap.set(closeBtns, { transition: "none", opacity: 1, visibility: "visible" });
+      gsap.to(closeBtns, { opacity: 0, duration: duration, ease: ease });
+    }
+
     if (pw._setClosing) pw._setClosing(true);
 
     const state = Flip.getState(pw);
@@ -176,6 +188,9 @@ function initMiniShowreelPlayer() {
       absolute: true,
       scale: false,
       onComplete: () => {
+        if (closeBtns.length) {
+          gsap.set(closeBtns, { clearProps: "all" });
+        }
         zOff();
         if (pw?._setClosing) pw._setClosing(false);
         if (pw?._resetToMouse) pw._resetToMouse(); // restore origin
