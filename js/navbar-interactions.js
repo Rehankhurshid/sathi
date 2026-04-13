@@ -20,9 +20,9 @@ loadTl.to(".navbar2_component", {
   ...(isSafari
     ? { backgroundColor: "rgba(255, 255, 255, 0.92)" }
     : {
-        backdropFilter: "blur(6px)",
-        backgroundColor: "var(--base-color-neutral--nav-white)",
-      }),
+      backdropFilter: "blur(6px)",
+      backgroundColor: "var(--base-color-neutral--nav-white)",
+    }),
   borderColor: "var(--base-color-neutral--neutral-lightest)",
   ease: "power2.out",
 });
@@ -49,7 +49,18 @@ function createColorScrollTrigger({ trigger, color }) {
         duration: 0.3,
       },
       "<",
-    );
+    ).to(".menu-icon2_line-top", {
+      backgroundColor: color,
+      duration: 0.3,
+    }, "<")
+    .to(".menu-icon2_line-middle", {
+      backgroundColor: color,
+      duration: 0.3,
+    }, "<")
+    .to(".menu-icon2_line-bottom", {
+      backgroundColor: color,
+      duration: 0.3,
+    }, "<")
 }
 
 const navColorTriggers = [
