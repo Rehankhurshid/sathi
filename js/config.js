@@ -1,8 +1,8 @@
 window.PARALLAX_CONFIG = {
   colorUrl:
-    "https://cdn.prod.website-files.com/69b3a15204a82c9589e80874/69d63fb95ec5ba3f272388d6_sathi.jpeg",
+    "https://cdn.prod.website-files.com/69b3a15204a82c9589e80874/69d63fb95ec5ba3f272388d6_sathi.avif",
   depthUrl:
-    "https://cdn.prod.website-files.com/69b3a15204a82c9589e80874/69d63fb9bec584708c649d7b_depth-map.png",
+    "https://cdn.prod.website-files.com/69b3a15204a82c9589e80874/69d63fb9bec584708c649d7b_depth-map.avif",
 
   depthStrength: 0.05,
   xyShiftStrength: 0.012,
